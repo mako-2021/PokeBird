@@ -1,6 +1,5 @@
 exports.up = function (knex) {
   return knex.schema.createTable('birdAttributes', table => {
-    table.increments('birdId').primary()
     table.string('commonName')
     table.string('latinName')
     table.string('birdOrder')
