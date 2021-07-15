@@ -8,12 +8,7 @@ const server = express()
 server.use(express.json())
 server.use(express.static(path.join(__dirname, 'public')))
 
-<<<<<<< HEAD
-server.use('/api/v1/fruits', fruitRoutes)
-=======
 server.use('/api/v1/birds', birdsRoutes)
->>>>>>> main
-
 server.get('/api/v1/ebirds/obs/recent', (req, res) => {
   request
     .get('https://api.ebird.org/v2/data/obs/NZ/recent/')

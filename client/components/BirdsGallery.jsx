@@ -3,11 +3,7 @@ import { connect } from 'react-redux'
 import { getBirds } from '../apis/birds'
 import { activePage as setActivePage } from '../actions/activePage'
 
-function BirdsGallery (props) {
-<<<<<<< HEAD
-  return (
-    <h1>Birbs</h1>
-=======
+function BirdsGallery(props) {
   const { dispatch } = props
   const [birds, setBirds] = useState([])
 
@@ -21,7 +17,7 @@ function BirdsGallery (props) {
       .catch(e => console.log(e))
   }, [])
 
-  function handleClick () {
+  function handleClick() {
     dispatch(setActivePage('Homepage'))
   }
 
@@ -33,7 +29,6 @@ function BirdsGallery (props) {
       </ul>
       <button onClick={handleClick}>Back to Recently Observed</button>
     </>
->>>>>>> main
   )
 }
 
