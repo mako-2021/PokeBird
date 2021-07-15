@@ -17,5 +17,5 @@ test('testing header is Map', () => {
 })
 
 test('observed.length === markers on map', () => {
-  
+
 })
