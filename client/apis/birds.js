@@ -8,3 +8,11 @@ export function getRecentObs () {
     .then(res => res.body)
     .catch(e => console.log(e))
 }
+
+export function getBirds () {
+  console.log('getdaBirbs')
+  return request
+    .get(rootUrl + '/birds')
+    .then(res => res.body)
+    .catch(e => console.log(e))
+}
