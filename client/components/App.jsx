@@ -1,17 +1,27 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import BirdsGallery from './BirdsGallery'
 import Homepage from './Homepage'
+import { connect } from 'react-redux'
 
-
-export default function App() {
+function App (props) {
+  const { activePage, dispatch } = props
 
   return (
     <>
-      <Homepage />
+      {activePage === 'Homepage'
+        ? <Homepage />
+        : <BirdsGallery />
+      }
 
     </>
-
   )
 }
 
+function mapStateToProps (state) {
+  console.log(state)
+  return {
+    activePage: state.activePage
+  }
+}
 
+export default connect(mapStateToProps)(App)
