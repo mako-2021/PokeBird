@@ -10,7 +10,6 @@ server.use(express.static(path.join(__dirname, 'public')))
 
 server.use('/api/v1/fruits', fruitRoutes)
 
-
 server.get('/api/v1/ebirds/obs/recent', (req, res) => {
     request
         .get(`https://api.ebird.org/v2/data/obs/NZ/recent/`)
@@ -21,5 +20,3 @@ server.get('/api/v1/ebirds/obs/recent', (req, res) => {
 })
 
 module.exports = server
-
-
