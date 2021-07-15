@@ -3,6 +3,7 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import { usePosition } from 'use-position'
 import { fetchRecentObs, setRecentObs } from '../actions/observed'
 import { connect } from 'react-redux'
+import { activePage as setActivePage } from '../actions/activePage'
 
 function Homepage (props) {
   const { observed, dispatch } = props
@@ -19,6 +20,10 @@ function Homepage (props) {
     }
   }, [latitude, longitude])
 
+  function handleClick () {
+    dispatch(setActivePage('Gallery'))
+  }
+
   return (
     <>
       <h1>Map</h1>
@@ -33,6 +38,7 @@ function Homepage (props) {
         </MapContainer>
       </div>
       <div>
+        <button onClick={handleClick}>Go to Birds Gallery</button>
         <ul>
           {observed.map((observation, i) => (
             <li key={i}>{observation.comName}, {observation.lat}, {observation.lng}</li>
