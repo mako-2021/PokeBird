@@ -18,7 +18,6 @@ function App (props) {
 }
 
 function mapStateToProps (state) {
-  console.log(state)
   return {
     activePage: state.activePage
   }
