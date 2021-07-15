@@ -4,10 +4,6 @@ import { getBirds } from '../apis/birds'
 import { activePage as setActivePage } from '../actions/activePage'
 
 function BirdsGallery (props) {
-<<<<<<< HEAD
-  return (
-    <h1>Birbs</h1>
-=======
   const { dispatch } = props
   const [birds, setBirds] = useState([])
 
@@ -33,7 +29,6 @@ function BirdsGallery (props) {
       </ul>
       <button onClick={handleClick}>Back to Recently Observed</button>
     </>
->>>>>>> main
   )
 }
 
