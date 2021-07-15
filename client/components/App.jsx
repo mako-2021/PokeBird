@@ -4,7 +4,7 @@ import Homepage from './Homepage'
 import { connect } from 'react-redux'
 
 function App (props) {
-  const { activePage, dispatch } = props
+  const { activePage } = props
 
   return (
     <>
