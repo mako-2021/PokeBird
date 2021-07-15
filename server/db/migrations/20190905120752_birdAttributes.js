@@ -3,6 +3,7 @@ exports.up = function (knex) {
     table.increments('birdId').primary()
     table.string('commonName')
     table.string('latinName')
+    table.string('birdOrder')
     table.string('nzStatus')
     table.string('conservationStatus')
     table.string('length')
