@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useEffect } from 'react'
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import { usePosition } from 'use-position'
 import { fetchRecentObs, setRecentObs } from '../actions/observed'

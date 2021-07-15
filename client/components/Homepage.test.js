@@ -16,4 +16,6 @@ test('testing header is Map', () => {
   expect(heading.innerHTML).toMatch('Map')
 })
 
-// 'observed.length === markers on map'
+test('observed.length === markers on map', () => {
+  
+})
