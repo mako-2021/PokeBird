@@ -6,9 +6,23 @@ import Homepage from './Homepage'
 import store from '../store'
 import { fetchRecentObs } from '../actions/observed'
 
+const fakeStore = {
+  dispatch: jest.fn,
+  getState: jest.fn,
+  subscribe: jest.fn
+}
+
 jest.mock('../actions/observed', () => ({
   fetchRecentObs: jest.fn
 }))
+
+fakeStore.getState.mockImplementation(() => {
+  {speciesCode:'easros1',comName…91802490'},
+  {speciesCode:'dunnoc1',comName…91802490'},
+  {speciesCode:'comcha',comName:…91802490'},
+  {speciesCode:'sonthr1',comName…91802490'},
+  {speciesCode:'houspa',comName:…91802490'}
+})
 
 // fetchRecentObs.mockImplementation(() => () => {})
 
