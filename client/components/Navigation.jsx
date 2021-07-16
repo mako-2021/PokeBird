@@ -2,6 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import AuthenticationButton from './AutheticationButton'
 
+
 const Navigation = (props) => {
   // const { activePage } = props
 
