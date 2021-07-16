@@ -13,7 +13,7 @@ exports.seed = function (knex) {
           length: '45 cm',
           weight: 'M: 2.4 kg | F: 3.1 kg',
           description: 'A large brown kiwi with rufous to dark brown soft feathers streaked with brown and black, a long pale bill, and short pale legs and toes.',
-          image: '#',
+          image: '/images/placeholder-pidgey.png',
           audio: '#',
           url: 'http://nzbirdsonline.org.nz/species/southern-brown-kiwi'
         },
