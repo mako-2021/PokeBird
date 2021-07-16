@@ -4,7 +4,6 @@ import { Provider } from 'react-redux'
 import store from './store'
 import Auth0ProviderWithHistory from './components/auth/auth0-provider-with-history'
 
-
 import App from './components/App'
 
 document.addEventListener('DOMContentLoaded', () => {

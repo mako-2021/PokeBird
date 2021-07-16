@@ -4,9 +4,9 @@ import { usePosition } from 'use-position'
 import { fetchRecentObs, setRecentObs } from '../actions/observed'
 import { connect } from 'react-redux'
 import { activePage as setActivePage } from '../actions/activePage'
-import L from 'leaflet';
+import L from 'leaflet'
 
-function Homepage(props) {
+function Homepage (props) {
   const { observed, dispatch } = props
   const watch = true
   const { latitude, longitude } = usePosition(watch)
@@ -26,7 +26,7 @@ function Homepage(props) {
     }
   }, [latitude, longitude])
 
-  function handleClick() {
+  function handleClick () {
     dispatch(setActivePage('Gallery'))
   }
 
@@ -53,7 +53,7 @@ function Homepage(props) {
   )
 }
 
-function mapStateToProps(state) {
+function mapStateToProps (state) {
   return { observed: state.observed }
 }
 
