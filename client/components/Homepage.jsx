@@ -33,7 +33,7 @@ function Homepage (props) {
   return (
     <>
       <h1 style={{ textAlign: 'center' }}>Map of recent bird viewings in New Zealand Source: eBird </h1>
-      <div id="mapid" style={{ height: '600px', width: '600px' }}>
+      <div id="mapid" style={{ display: 'block', margin: '0 auto', height: '600px', width: '600px' }}>
         <MapContainer center={[-40.90, 174.77]} zoom={6} scrollWheelZoom={true} style={{ height: '600px', width: '600px' }}>
           <TileLayer
             attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
