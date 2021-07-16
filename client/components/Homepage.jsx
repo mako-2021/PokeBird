@@ -4,9 +4,9 @@ import { usePosition } from 'use-position'
 import { fetchRecentObs, setRecentObs } from '../actions/observed'
 import { connect } from 'react-redux'
 import { activePage as setActivePage } from '../actions/activePage'
-import L from 'leaflet';
+import L from 'leaflet'
 
-function Homepage(props) {
+function Homepage (props) {
   const { observed, dispatch } = props
   const watch = true
   const { latitude, longitude } = usePosition(watch)
@@ -26,14 +26,14 @@ function Homepage(props) {
     }
   }, [latitude, longitude])
 
-  function handleClick() {
+  function handleClick () {
     dispatch(setActivePage('Gallery'))
   }
 
   return (
     <>
       <h1 style={{ textAlign: 'center' }}>Map of recent bird viewings in New Zealand Source: eBird </h1>
-      <div id="mapid" style={{ height: '600px', width: '600px' }}>
+      <div id="mapid" style={{ display: 'block', margin: '0 auto', height: '600px', width: '600px' }}>
         <MapContainer center={[-40.90, 174.77]} zoom={6} scrollWheelZoom={true} style={{ height: '600px', width: '600px' }}>
           <TileLayer
             attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
@@ -53,7 +53,7 @@ function Homepage(props) {
   )
 }
 
-function mapStateToProps(state) {
+function mapStateToProps (state) {
   return { observed: state.observed }
 }
 
