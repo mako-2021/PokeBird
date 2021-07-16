@@ -6,9 +6,11 @@ import Homepage from './Homepage'
 import store from '../store'
 import { fetchRecentObs } from '../actions/observed'
 
-jest.mock('../actions/observed')
+jest.mock('../actions/observed', () => ({
+  fetchRecentObs: jest.fn
+}))
 
-fetchRecentObs.mockImplementation(() => () => {})
+// fetchRecentObs.mockImplementation(() => () => {})
 
 test('testing header is Map', () => {
   render(<Provider store={store}><Homepage /></Provider>)

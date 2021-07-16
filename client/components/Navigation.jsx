@@ -7,9 +7,7 @@ const Navigation = (props) => {
 
   return (
     <div className='nav-bar'>
-      <Menu secondary>
-        <AuthenticationButton/>
-      </Menu>
+      <AuthenticationButton/>
     </div>
   )
 }
