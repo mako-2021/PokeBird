@@ -3,24 +3,24 @@ import { connect } from 'react-redux'
 import { setActivePage } from '../actions/activePage'
 
 export const PageMenu = (props) => {
-  const { activePages, dispatch } = props
+  const { activePage, dispatch } = props
   function handleClick(e) {
     e.preventDefault()
-    console.log('pre dispatch', activePages)
+    console.log('pre dispatch', activePage)
     dispatch(setActivePage(e.target.value))
-    console.log('post dispatch', activePages)
+    console.log('post dispatch', activePage)
   }
 
   return (
     <div>
-      <button onClick={handleClick} value={'Homepage'}>Homepage</button>
-      <button onClick={handleClick} value={'Gallery'}>Gallery</button>
+      <button onClick={e => handleClick(e)} value={'Homepage'}>Homepage</button>
+      <button onClick={e => handleClick(e)} value={'Gallery'}>Gallery</button>
     </div>
   )
 }
 
 const mapStateToProps = (state) => ({
-  activePages: state.activePages
+  activePage: state.activePage
 })
 
 export default connect(mapStateToProps)(PageMenu)
