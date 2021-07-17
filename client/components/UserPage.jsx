@@ -18,7 +18,10 @@ const UserPage = (props) => {
 
   function handleClick (bird, e) {
     e.preventDefault()
-    dispatch(setSeenBirds(bird))
+    const seen = seenBirds.find((seenBird) => bird === seenBird)
+    if (seen) {
+      alert('Bird has already been added to the list')
+    } else { dispatch(setSeenBirds(bird)) }
   }
 
   return (
@@ -32,7 +35,11 @@ const UserPage = (props) => {
       </ul>
       <h2>All Birds</h2>
       <ul>
-        {birds.map((bird, i) => <li key={i} value={bird.commonName} onClick={(e) => handleClick(bird, e)}>{bird.commonName}</li>)}
+        {birds.map((bird, i) => (
+          <>
+            <li key={i} value={bird.commonName}>{bird.commonName}  <button onClick={(e) => handleClick(bird, e)}>Add</button></li>
+          </>
+        ))}
       </ul>
     </>
   )
