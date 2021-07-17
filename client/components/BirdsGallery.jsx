@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { connect } from 'react-redux'
 import { getBirds } from '../apis/birds'
-import { activePage as setActivePage } from '../actions/activePage'
+import { setActivePage } from '../actions/activePage'
 
 function BirdsGallery(props) {
   const { dispatch } = props
