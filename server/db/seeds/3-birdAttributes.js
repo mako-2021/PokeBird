@@ -11,7 +11,7 @@ exports.seed = function (knex) {
       length: 'M: x cm | F: x cm',
       weight: 'M: x g | F: x g',
       description: '',
-      image: '#',
+      image: '/images/placeholder-pidgey.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/kakapo'
     },
@@ -37,7 +37,7 @@ exports.seed = function (knex) {
       length: 'M: x cm | F: x cm',
       weight: 'M: x g | F: x g',
       description: '',
-      image: '#',
+      image: '/images/placeholder-pidgey.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/kea'
     },
@@ -63,7 +63,7 @@ exports.seed = function (knex) {
       length: 'M: x cm | F: x cm',
       weight: 'M: x g | F: x g',
       description: '',
-      image: '#',
+      image: '/images/placeholder-pidgey.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/eastern-rosella'
     },
@@ -89,7 +89,7 @@ exports.seed = function (knex) {
       length: 'M: x cm | F: x cm',
       weight: 'M: x g | F: x g',
       description: '',
-      image: '#',
+      image: '/images/placeholder-pidgey.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/red-crowned-parakeet'
     },
@@ -115,7 +115,7 @@ exports.seed = function (knex) {
       length: 'M: x cm | F: x cm',
       weight: 'M: x g | F: x g',
       description: '',
-      image: '#',
+      image: '/images/placeholder-pidgey.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/orange-fronted-parakeet'
     },
@@ -141,7 +141,7 @@ exports.seed = function (knex) {
       length: 'M: x cm | F: x cm',
       weight: 'M: x g | F: x g',
       description: '',
-      image: '#',
+      image: '/images/placeholder-pidgey.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/shining-cuckoo'
     },
@@ -167,7 +167,7 @@ exports.seed = function (knex) {
       length: 'M: x cm | F: x cm',
       weight: 'M: x g | F: x g',
       description: '',
-      image: '#',
+      image: '/images/placeholder-pidgey.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/morepork'
     },
@@ -193,7 +193,7 @@ exports.seed = function (knex) {
       length: 'M: x cm | F: x cm',
       weight: 'M: x g | F: x g',
       description: '',
-      image: '#',
+      image: '/images/placeholder-pidgey.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/barn-owl'
     },
@@ -219,7 +219,7 @@ exports.seed = function (knex) {
       length: 'M: x cm | F: x cm',
       weight: 'M: x g | F: x g',
       description: '',
-      image: '#',
+      image: '/images/placeholder-pidgey.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/sacred-kingfisher'
     },
@@ -245,7 +245,7 @@ exports.seed = function (knex) {
       length: 'M: x cm | F: x cm',
       weight: 'M: x g | F: x g',
       description: '',
-      image: '#',
+      image: '/images/placeholder-pidgey.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/rock-wren'
     },
@@ -271,7 +271,7 @@ exports.seed = function (knex) {
       length: 'M: x cm | F: x cm',
       weight: 'M: x g | F: x g',
       description: '',
-      image: '#',
+      image: '/images/placeholder-pidgey.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/north-island-saddleback'
     },
@@ -297,7 +297,7 @@ exports.seed = function (knex) {
       length: 'M: x cm | F: x cm',
       weight: 'M: x g | F: x g',
       description: '',
-      image: '#',
+      image: '/images/placeholder-pidgey.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/stitchbird'
     },
@@ -323,7 +323,7 @@ exports.seed = function (knex) {
       length: 'M: x cm | F: x cm',
       weight: 'M: x g | F: x g',
       description: '',
-      image: '#',
+      image: '/images/placeholder-pidgey.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/bellbird'
     },
@@ -349,7 +349,7 @@ exports.seed = function (knex) {
       length: 'M: x cm | F: x cm',
       weight: 'M: x g | F: x g',
       description: '',
-      image: '#',
+      image: '/images/placeholder-pidgey.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/whitehead'
     },
@@ -375,7 +375,7 @@ exports.seed = function (knex) {
       length: 'M: x cm | F: x cm',
       weight: 'M: x g | F: x g',
       description: '',
-      image: '#',
+      image: '/images/placeholder-pidgey.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/brown-creeper'
     },
@@ -401,7 +401,7 @@ exports.seed = function (knex) {
       length: 'M: x cm | F: x cm',
       weight: 'M: x g | F: x g',
       description: '',
-      image: '#',
+      image: '/images/placeholder-pidgey.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/new-zealand-fantail'
     },
@@ -427,7 +427,7 @@ exports.seed = function (knex) {
       length: 'M: x cm | F: x cm',
       weight: 'M: x g | F: x g',
       description: '',
-      image: '#',
+      image: '/images/placeholder-pidgey.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/tomtit'
     },
@@ -453,7 +453,7 @@ exports.seed = function (knex) {
       length: 'M: x cm | F: x cm',
       weight: 'M: x g | F: x g',
       description: '',
-      image: '#',
+      image: '/images/placeholder-pidgey.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/south-island-robin'
     },
@@ -479,7 +479,7 @@ exports.seed = function (knex) {
       length: 'M: x cm | F: x cm',
       weight: 'M: x g | F: x g',
       description: '',
-      image: '#',
+      image: '/images/placeholder-pidgey.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/eurasian-skylark'
     },
@@ -505,7 +505,7 @@ exports.seed = function (knex) {
       length: 'M: x cm | F: x cm',
       weight: 'M: x g | F: x g',
       description: '',
-      image: '#',
+      image: '/images/placeholder-pidgey.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/silvereye'
     },
@@ -531,7 +531,7 @@ exports.seed = function (knex) {
       length: 'M: x cm | F: x cm',
       weight: 'M: x g | F: x g',
       description: '',
-      image: '#',
+      image: '/images/placeholder-pidgey.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/eurasian-blackbird'
     },
@@ -557,7 +557,7 @@ exports.seed = function (knex) {
       length: 'M: x cm | F: x cm',
       weight: 'M: x g | F: x g',
       description: '',
-      image: '#',
+      image: '/images/placeholder-pidgey.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/common-starling'
     },
@@ -583,7 +583,7 @@ exports.seed = function (knex) {
       length: 'M: x cm | F: x cm',
       weight: 'M: x g | F: x g',
       description: '',
-      image: '#',
+      image: '/images/placeholder-pidgey.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/house-sparrow'
     },
@@ -609,7 +609,7 @@ exports.seed = function (knex) {
       length: 'M: x cm | F: x cm',
       weight: 'M: x g | F: x g',
       description: '',
-      image: '#',
+      image: '/images/placeholder-pidgey.png',
       audio: '#',
       url: 'http://www.nzbirdsonline.org.nz/species/dunnock'
     },
@@ -635,7 +635,7 @@ exports.seed = function (knex) {
       length: 'M: x cm | F: x cm',
       weight: 'M: x g | F: x g',
       description: '',
-      image: '#',
+      image: '/images/placeholder-pidgey.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/european-goldfinch'
     },
@@ -661,7 +661,7 @@ exports.seed = function (knex) {
       length: 'M: x cm | F: x cm',
       weight: 'M: x g | F: x g',
       description: '',
-      image: '#',
+      image: '/images/placeholder-pidgey.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/common-redpoll'
     },
@@ -687,7 +687,7 @@ exports.seed = function (knex) {
       length: '1.4 m',
       weight: 'M: 12 kg | F: 18 kg',
       description: 'Giant eagle with large wingspan, head, bill, legs and talons. Māori oral tradition records that it had black feathers tinged with yellow or green and a bunch of red feathers on its head.',
-      image: '#',
+      image: '/images/placeholder-pidgey.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/haasts-eagle'
     }
