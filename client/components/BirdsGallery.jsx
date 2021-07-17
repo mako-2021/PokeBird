@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { connect } from 'react-redux'
 import { getBirds } from '../apis/birds'
-import { setActivePage } from '../actions/activePage'
 
 function BirdsGallery(props) {
   const { dispatch } = props
@@ -10,16 +9,11 @@ function BirdsGallery(props) {
   useEffect(() => {
     return getBirds()
       .then(res => {
-        console.log('component res', res)
         setBirds(res)
         return null
       })
       .catch(e => console.log(e))
   }, [])
-
-  function handleClick() {
-    dispatch(setActivePage('Homepage'))
-  }
 
   return (
     <>
@@ -27,7 +21,6 @@ function BirdsGallery(props) {
       <ul>
         {birds.map((bird, i) => <li key={i}>{bird.commonName}</li>)}
       </ul>
-      <button onClick={handleClick}>Back to Recently Observed</button>
     </>
   )
 }

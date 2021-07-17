@@ -3,12 +3,12 @@ import { connect } from 'react-redux'
 import { setActivePage } from '../actions/activePage'
 
 export const PageMenu = (props) => {
-  const { activePage, dispatch } = props
+  const { dispatch } = props
+
   function handleClick(e) {
     e.preventDefault()
-    console.log('pre dispatch', activePage)
     dispatch(setActivePage(e.target.value))
-    console.log('post dispatch', activePage)
+
   }
 
   return (

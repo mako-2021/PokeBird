@@ -6,7 +6,6 @@ import UserPage from './UserPage'
 
 export const Pages = (props) => {
   const { activePage } = props
-  console.log('activePage', activePage)
 
   if (activePage === 'Homepage') {
     return <Homepage />
