@@ -12,6 +12,7 @@ export const PageMenu = (props) => {
     e.preventDefault()
     dispatch(setActivePage(e.target.value))
 
+
   }
 
   return (

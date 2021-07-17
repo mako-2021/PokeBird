@@ -5,7 +5,7 @@ import { connect } from 'react-redux'
 import Navigation from './Navigation'
 import Pages from './Pages'
 
-function App(props) {
+function App (props) {
   // const { activePage } = props
 
   return (
@@ -16,7 +16,7 @@ function App(props) {
   )
 }
 
-function mapStateToProps(state) {
+function mapStateToProps (state) {
   return {
     activePage: state.activePage
   }

@@ -4,7 +4,7 @@ import BirdsGallery from './BirdsGallery'
 import Homepage from './Homepage'
 import UserPage from './UserPage'
 
-export const Pages = (props) => {
+const Pages = (props) => {
   const { activePage } = props
 
   if (activePage === 'Homepage') {
