@@ -24,7 +24,7 @@ function Homepage (props) {
         })
     }
   }, [latitude, longitude])
-
+  console.log(observed)
   return (
     <>
       <h1 style={{ textAlign: 'center' }}>Map of recent bird viewings in New Zealand Source: eBird </h1>
