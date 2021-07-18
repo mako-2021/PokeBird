@@ -10,6 +10,8 @@ jest.mock('../actions')
 
 fetchFruits.mockImplementation(() => () => {})
 
+// these tests look fruity and should be composted
+
 test('page header includes fruit', () => {
   render(<Provider store={store}><App /></Provider>)
   const heading = screen.getByRole('heading')

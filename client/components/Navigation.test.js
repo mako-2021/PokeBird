@@ -9,3 +9,5 @@ import { fetchRecentObs } from '../actions/observed'
 jest.mock('../actions/observed')
 
 fetchRecentObs.mockImplementation(() => () => {})
+
+// tests only count if they actually have a test in them

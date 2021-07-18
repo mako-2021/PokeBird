@@ -46,7 +46,7 @@ const UserPage = (props) => {
 }
 
 function mapStateToProps (state) {
-  console.log(state)
+  console.log(state) // debugging code should never see the main branch
   return {
     seenBirds: state.seenBirds
   }

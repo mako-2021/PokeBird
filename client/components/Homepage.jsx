@@ -7,7 +7,7 @@ import L from 'leaflet'
 
 function Homepage (props) {
   const { observed, dispatch } = props
-  const watch = true
+  const watch = true // this variable is only used in one spot so I would just pass true directly to usePosition without making a var
   const { latitude, longitude } = usePosition(watch)
 
   const icon = L.icon({

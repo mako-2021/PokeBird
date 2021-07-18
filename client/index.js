@@ -7,6 +7,8 @@ import Auth0ProviderWithHistory from './components/auth/auth0-provider-with-hist
 
 import App from './components/App'
 
+//You're not actually using the Router anywhere - remove it until you use it
+
 document.addEventListener('DOMContentLoaded', () => {
   render(
     <Router>

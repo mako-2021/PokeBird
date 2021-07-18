@@ -9,6 +9,7 @@ export function setRecentObs (observed) {
   }
 }
 
+// this should have a then which sends off the setRecentObs
 export function fetchRecentObs () {
   return getRecentObs()
 }

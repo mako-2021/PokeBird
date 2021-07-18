@@ -1,3 +1,5 @@
+ // delete placeholder code
+
 import { SET_FRUITS } from '../actions'
 
 const initialState = []

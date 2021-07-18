@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react'
 import { connect } from 'react-redux'
 import { getBirds } from '../apis/birds'
 
+// perfect, just needs a test
+
 function BirdsGallery (props) {
   const [birds, setBirds] = useState([])
 

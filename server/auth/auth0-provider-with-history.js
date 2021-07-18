@@ -2,6 +2,9 @@ import React from 'react'
 import { useHistory } from 'react-router-dom'
 import { Auth0Provider } from '@auth0/auth0-react'
 
+// react code should be in /client not /server
+// I'm ok with this beign manually tested as it's mostly config for code you didn't write
+
 const Auth0ProviderWithHistory = ({ children }) => {
   const domain = process.env.REACT_APP_AUTH0_DOMAIN
   // const domain = 'dev-850ddeyb.us.auth0.com'

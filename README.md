@@ -1,3 +1,12 @@
+# Code review
+
+* 16 linter errors - always run your linter
+* 4 failing tests, never let failing tests in to main
+* always a good idea to have a .env.sample so new devs know what keys they need to get setup
+* 034.png file looks orphaned in server/routes
+* server side routes and db functions need tests
+* don't forget that you can test the simple action creators in your reducer tests = 2 for 1
+
 # Fullstack boilerplate
 
 ## Getting Started

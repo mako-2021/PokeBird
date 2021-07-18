@@ -4,6 +4,9 @@ import BirdsGallery from './BirdsGallery'
 import Homepage from './Homepage'
 import UserPage from './UserPage'
 
+// React router is generally better than managing navigation in the redux state - but this is ok
+// But you know what would be awesome either way?
+// A test
 const Pages = (props) => {
   const { activePage } = props
 

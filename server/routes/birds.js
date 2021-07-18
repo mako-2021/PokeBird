@@ -4,6 +4,7 @@ const db = require('../db/birds')
 
 const router = express.Router()
 
+// I'm just a route, standing in front of a coder, asking them to test me
 router.get('/', (req, res) => {
   db.getBirds()
     .then(results => {

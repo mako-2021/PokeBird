@@ -1,5 +1,6 @@
 import { combineReducers } from 'redux'
 
+// TODO: test me
 import fruits from './fruits'
 import observed from './observed'
 import activePage from './activePage'

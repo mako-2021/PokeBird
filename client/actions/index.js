@@ -1,3 +1,4 @@
+// delete everything fruity
 import { getFruits } from '../apis/fruits'
 
 export const SET_FRUITS = 'SET_FRUITS'
