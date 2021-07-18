@@ -17,10 +17,18 @@ export function getBirds () {
 }
 
 export function getUserObsBySub (userSub) {
-  console.log('getting users bird')
   return request
     .post(rootUrl + '/userObs')
     .send({ userSub })
+    .then(res => res.body)
+    .catch(e => console.log(e.message))
+}
+
+export function addUserObs (observation) {
+  console.log(observation)
+  return request
+    .post(rootUrl + '/userObs/add')
+    .send({ observation })
     .then(res => res.body)
     .catch(e => console.log(e.message))
 }

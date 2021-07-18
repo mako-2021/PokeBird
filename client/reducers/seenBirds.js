@@ -1,12 +1,11 @@
 import { SEEN_BIRDS } from '../actions/seenBirds'
 
-const initialState = ['Hieraaetus moorei']
+const initialState = []
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
     case SEEN_BIRDS:
-      var newState = [...state, action.bird]
-      return newState
+      return action.bird
     default:
       return state
   }

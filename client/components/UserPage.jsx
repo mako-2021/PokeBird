@@ -31,7 +31,7 @@ const UserPage = (props) => {
 
   function handleClick (bird, e) {
     e.preventDefault()
-    const seen = seenBirds.find((seenBird) => bird === seenBird)
+    const seen = seenBirds.find((seenBird) => bird.latinName === seenBird.latinName)
     if (seen) {
       alert('Bird has already been added to the list')
     } else { dispatch(setSeenBirds(bird)) }
@@ -49,9 +49,10 @@ const UserPage = (props) => {
       <h1>Birds Gallery</h1>
       <div className='row'>
         {birds.map(function (bird, i) {
+          const addBird = { userSub: sub, latinName: bird.latinName }
           return (
             <div className='column' key={i}>
-              <div className='card' key={bird.latinName} onClick={(e) => handleClick(bird.latinName, e)}>
+              <div className='card' key={bird.latinName} onClick={(e) => handleClick(addBird, e)}>
                 <img src={bird.image}></img>
                 <h3>{bird.commonName}</h3>
                 <p>{bird.nzStatus}</p>
