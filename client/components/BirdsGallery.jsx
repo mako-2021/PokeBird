@@ -2,8 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { connect } from 'react-redux'
 import { getBirds } from '../apis/birds'
 
-function BirdsGallery(props) {
-  const { dispatch } = props
+function BirdsGallery (props) {
   const [birds, setBirds] = useState([])
 
   useEffect(() => {
@@ -18,9 +17,20 @@ function BirdsGallery(props) {
   return (
     <>
       <h1>Birds Gallery</h1>
-      <ul>
-        {birds.map((bird, i) => <li key={i}>{bird.commonName}</li>)}
-      </ul>
+      <div className='row'>
+        {birds.map(function (bird, i) {
+          return (
+            <div className='column' key={bird.i}>
+              <div className='card' key={i}>
+                <img src={bird.image}></img>
+                <h3>{bird.commonName}</h3>
+                <p>{bird.nzStatus}</p>
+              </div>
+            </div>
+          )
+        }
+        )}
+      </div>
     </>
   )
 }
