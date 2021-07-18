@@ -19,8 +19,9 @@ export const PageMenu = (props) => {
     <div>
       <button onClick={e => handleClick(e)} value={'Homepage'}>Homepage</button>
       <button onClick={e => handleClick(e)} value={'Gallery'}>Gallery</button>
-      {isAuthenticated && 
-      <button onClick={e => handleClick(e)} value={'User'}>User</button>
+      <button onClick={e => handleClick(e)} value={'Quiz'}>Quiz</button>
+      {isAuthenticated &&
+        <button onClick={e => handleClick(e)} value={'User'}>User</button>
       }
     </div>
   )
