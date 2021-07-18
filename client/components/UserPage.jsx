@@ -33,14 +33,21 @@ const UserPage = (props) => {
           <li key={i}>{bird.commonName}</li>
         ))}
       </ul>
-      <h2>All Birds</h2>
-      <ul>
-        {birds.map((bird, i) => (
-          <>
-            <li key={i} value={bird.commonName}>{bird.commonName}  <button onClick={(e) => handleClick(bird, e)}>Add</button></li>
-          </>
-        ))}
-      </ul>
+      <h1>Birds Gallery</h1>
+      <div className='row'>
+        {birds.map(function (bird, i) {
+          return (
+            <div className='column' key={bird.i}>
+              <div className='card' key={i} onClick={(e) => handleClick(bird, e)}>
+                <img src={bird.image}></img>
+                <h3>{bird.commonName}</h3>
+                <p>{bird.nzStatus}</p>
+              </div>
+            </div>
+          )
+        }
+        )}
+      </div>
     </>
   )
 }
