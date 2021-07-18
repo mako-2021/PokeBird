@@ -5,9 +5,7 @@ const initialState = [{ speciesCode: 'easros1', comName: 'Eastern Rosella', lat:
 const reducer = (state = initialState, action) => {
   switch (action.type) {
     case RECENT_OBS:
-      // const newState = [...action.observed]
-      const newState = [...state, action.observed]
-      return newState
+      return action.observed
     default:
       return state
   }

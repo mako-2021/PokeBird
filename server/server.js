@@ -15,7 +15,7 @@ server.get('/api/v1/ebirds/obs/recent', (req, res) => {
     .set('X-eBirdApiToken', process.env.REACT_APP_API_KEY)
     .set('Accept', 'application/json')
     .then(response => res.json(response.body))
-    .catch(e => console.log(e))
+    .catch(e => console.log('api route', e))
 })
 
 module.exports = server

@@ -3,7 +3,6 @@ import { MapContainer, TileLayer, Marker, Tooltip } from 'react-leaflet'
 import { usePosition } from 'use-position'
 import { fetchRecentObs, setRecentObs } from '../actions/observed'
 import { connect } from 'react-redux'
-import { activePage as setActivePage } from '../actions/activePage'
 import L from 'leaflet'
 
 function Homepage (props) {
@@ -19,16 +18,12 @@ function Homepage (props) {
   useEffect(() => {
     if (latitude !== undefined && longitude !== undefined) {
       return fetchRecentObs()
-        .then(observed => {
-          dispatch(setRecentObs(observed))
+        .then(observations => {
+          dispatch(setRecentObs(observations))
           return null
         })
     }
   }, [latitude, longitude])
-
-  function handleClick () {
-    dispatch(setActivePage('Gallery'))
-  }
 
   return (
     <>
@@ -42,12 +37,9 @@ function Homepage (props) {
           <Marker position={[-41.29, 174.77]}>
             <Tooltip>Wellington</Tooltip>
           </Marker>
-          {observed.map((observation, i) => <Marker data-testid="bird" icon={icon} key={i} position={[observation.lat, observation.lng]}>
+          {observed.map((observation, i) => <Marker data-testid='bird' icon={icon} key={i} position={[observation.lat, observation.lng]}>
             <Tooltip>{observation.comName} <br /> seen at {observation.locName} <br /> on {observation.obsDt}</Tooltip></Marker>)}
         </MapContainer>
-      </div>
-      <div>
-        <button onClick={handleClick}>Go to Birds Gallery</button>
       </div>
     </>
   )

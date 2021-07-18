@@ -1,13 +1,15 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import AuthenticationButton from './AutheticationButton'
+import AuthNav from './AuthNav'
+import PageMenu from './PageMenu'
 
 const Navigation = (props) => {
   // const { activePage } = props
 
   return (
-    <div className='nav-bar'>
-      <AuthenticationButton/>
+    <div className='nav'>
+      <PageMenu/>
+      <AuthNav/>
     </div>
   )
 }

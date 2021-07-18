@@ -4,7 +4,7 @@ import { screen, render } from '@testing-library/react'
 
 import Homepage from './Homepage'
 // import store from '../store'
-import { fetchRecentObs } from '../actions/observed'
+// import { fetchRecentObs } from '../actions/observed'
 
 const fakeStore = {
   dispatch: jest.fn(),
@@ -13,7 +13,7 @@ const fakeStore = {
 }
 
 jest.mock('../actions/observed', () => ({
-  fetchRecentObs: jest.fn
+  fetchRecentObs: jest.fn()
 }))
 
 fakeStore.getState.mockImplementation(() => ({
