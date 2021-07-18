@@ -5,7 +5,7 @@ import { fetchRecentObs, setRecentObs } from '../actions/observed'
 import { connect } from 'react-redux'
 import L from 'leaflet'
 
-function Homepage(props) {
+function Homepage (props) {
   const { observed, dispatch } = props
   const watch = true
   const { latitude, longitude } = usePosition(watch)
@@ -25,7 +25,6 @@ function Homepage(props) {
     }
   }, [latitude, longitude])
 
-
   return (
     <>
       <h1 style={{ textAlign: 'center' }}>Map of recent bird viewings in New Zealand Source: eBird </h1>
@@ -38,7 +37,7 @@ function Homepage(props) {
           <Marker position={[-41.29, 174.77]}>
             <Tooltip>Wellington</Tooltip>
           </Marker>
-          {observed.map((observation, i) => <Marker data-testid='bird' icon={icon} key={i} position={[observation.lat, observation.lng]}>
+          {observed.map((observation, i) => <Marker data-testid="bird" icon={icon} key={i} position={[observation.lat, observation.lng]}>
             <Tooltip>{observation.comName} <br /> seen at {observation.locName} <br /> on {observation.obsDt}</Tooltip></Marker>)}
         </MapContainer>
       </div>
@@ -46,7 +45,7 @@ function Homepage(props) {
   )
 }
 
-function mapStateToProps(state) {
+function mapStateToProps (state) {
   return { observed: state.observed }
 }
 
