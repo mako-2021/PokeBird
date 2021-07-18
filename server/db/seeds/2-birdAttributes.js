@@ -11,7 +11,7 @@ exports.seed = function (knex) {
       length: '90 cm',
       weight: '2.3 kg',
       description: 'A large slender-bodied seabird with mainly white plumage, buff-yellow head and neck, a wedge-shaped bluish-grey bill and blue skin around the eyes. The trailing edges of the long pointed wings and a varying proportion of the central tail feathers are black.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/057.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/australasian-gannet'
     },
@@ -24,7 +24,7 @@ exports.seed = function (knex) {
       length: '80 cm',
       weight: '1.7 kg',
       description: 'A large white-bodied seabird with long slender neck, body and wings, long wedge-shaped tail, long straight serrated yellow bill, dark brown iris and dark grey-blue facial skin. The flight feathers on the trailing edge of the wing and the tail feathers are black, although the central tail feathers can be white.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/058.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/masked-booby'
     },
@@ -37,7 +37,7 @@ exports.seed = function (knex) {
       length: '56 cm',
       weight: '400 - 850 g',
       description: 'A small shag with a short yellow bill, black feet, a relatively long tail and multiple plumage variations. Most adults are either black with white cheeks and throat or black with completely white underparts, or intermediate. All three morphs develop a head crest during the breeding season.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/059.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/little-shag'
     },
@@ -50,7 +50,7 @@ exports.seed = function (knex) {
       length: '80 - 90 cm',
       weight: '2.0 - 2.4 kg',
       description: 'A large all-black shag of coastal and inland waters with white feathering on the cheeks and throat, yellow facial skin, black feet and grey-green eyes. Adults in breeding plumage have red-orange facial skin, white thigh patches, a small black head crest, and white filoplumes on the neck.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/060.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/black-shag'
     },
@@ -63,7 +63,7 @@ exports.seed = function (knex) {
       length: '65 - 85 cm',
       weight: '1.3 - 2.1 kg',
       description: 'A large, relatively slim black-and-white shag with white face, black feet, blue eye-rings and yellow facial skin. Black back, nape and upperwings contrast with white throat, breast and belly.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/061.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/pied-shag'
     },
@@ -76,7 +76,7 @@ exports.seed = function (knex) {
       length: '60 cm',
       weight: '800 g',
       description: 'A medium-sized shag of coastal and inland waters with all-black plumage, dark facial skin, a thin black bill and black feet. The distinctive iris is much brighter green eye than other shag species.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/062.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/little-black-shag'
     },
@@ -89,7 +89,7 @@ exports.seed = function (knex) {
       length: '76 cm',
       weight: '2.5 kg',
       description: 'A large, thick-necked, black-and-white marine shag with large pink feet, blue eye-rings and yellow caruncles on each side of the bill. The upperwings are black with a white patch or stripe near the leading edge and sometimes a white patch on the black upper back.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/063.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/new-zealand-king-shag'
     },
@@ -102,7 +102,7 @@ exports.seed = function (knex) {
       length: '64 - 74 cm',
       weight: '700 - 1200 g',
       description: 'A slim, medium-sized, grey-blue marine shag of the mainland with a long, slender bill and yellow-orange feet. Adult breeding birds have black spots on the back and upperwings, and two curved, broad, white stripes that run from each eye down each side of the neck.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/064.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/spotted-shag'
     },
@@ -115,7 +115,7 @@ exports.seed = function (knex) {
       length: '85 - 105 cm',
       weight: '700 - 1200 g',
       description: 'A large white heron with a long pointed yellow bill, a gape that extends well behind the eye, long dark legs, and a very long neck. In flight, it retracts its head so that the length of its neck is hidden, giving it a hunched appearance.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/065.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/white-heron'
     },
@@ -128,7 +128,7 @@ exports.seed = function (knex) {
       length: '67 cm',
       weight: '550 g',
       description: 'A medium-sized blue-grey heron with white face, long dark grey bill, and pale yellow legs. In flight the open wings show a marked contrast between the pale grey fore-wing and dark grey main flight feathers on both the upper and lower surfaces.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/066.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/white-faced-heron'
     },
@@ -141,7 +141,7 @@ exports.seed = function (knex) {
       length: '74 cm',
       weight: 'M: 1400 g | F: 900 g',
       description: 'A large, stocky heron with a thick neck, heavy yellowish bill and relatively short yellow legs. The beige plumage has dark brown streaking and mottling, and there is a buff eye-stripe on the mainly dark head.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/067.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/australasian-bittern'
     },
@@ -154,7 +154,7 @@ exports.seed = function (knex) {
       length: '74 - 81 cm',
       weight: '1.2 - 2.0 kg',
       description: 'A large white heron-like bird with long black legs and a large black spoon-shaped bill. In breeding plumage it has long white crest feathers on the nape.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/068.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/royal-spoonbill'
     },
@@ -167,7 +167,7 @@ exports.seed = function (knex) {
       length: '50 - 60 cm',
       weight: 'M: 650 g | F: 850 g',
       description: 'A large long-legged harrier with long taloned toes, long pointed wings, prominent facial disks and a strongly hooked bill. Adults have a tawny-brown back, pale cream streaked breast, yellow eyes, yellow cere and a creamy white rump visible in flight; juvenile and immature birds are uniformly dark chococlate brown.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/069.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/swamp-harrier'
     },
@@ -180,7 +180,7 @@ exports.seed = function (knex) {
       length: '40 - 50 cm',
       weight: 'M: 200 - 340 g | F: 420 - 740 g',
       description: 'A robust falcon with broad wings, long tail, long yellow legs and toes, yellow eye-ring and cere, dark eyes, and a distinct moustache stripe from the base of the strongly hooked bill down the face. Adults are brown-backed with a streaked cream breast and a rufous under tail and thighs; fledglings and juveniles are dark brown, lack cream streaking, with blue-grey legs, eye-ring and cere.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/070.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/new-zealand-falcon'
     },
@@ -193,7 +193,7 @@ exports.seed = function (knex) {
       length: '30 cm',
       weight: '170 g',
       description: 'A medium-sized rail with a long stout reddish-brown bill, dark red eyes, pinkish legs, a pale grey eyebrow stripe and cheeks, and a broad buff-orange band on the breast separated from the grey throat. It also has a rufous eye-stripe that runs from the bill back to the rufous nape and an olive-brown crown and back with black-streaking on the back, finely spotted with white.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/071.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/banded-rail'
     },
@@ -206,7 +206,7 @@ exports.seed = function (knex) {
       length: '50 - 60 cm',
       weight: '430 - 1400 g',
       description: 'A large flightless rail with red eyes, a strong pointed reddish to greyish bill, red strong legs and variable plumage ranging in colour from greyish and mid-brown to chestnut brown and almost black. Most birds have their dorsal feathers streaked with black, and all have their longest wing and tail feathers boldly barred with black.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/072.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/weka'
     },
@@ -219,7 +219,7 @@ exports.seed = function (knex) {
       length: '20 cm',
       weight: '45 g',
       description: 'A small dark bluish-grey and brown rail with a stout black bill, long orange-pink legs and bright red eyes. Adult plumage is dark brown on the upperparts and dark bluish grey beneath; juveniles are duller with a pale chin and throat and dark legs.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/073.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/spotless-crake'
     },
@@ -232,7 +232,7 @@ exports.seed = function (knex) {
       length: '38 - 50 cm',
       weight: 'M: 1100 g | F: 900 g',
       description: 'A large relatively compact rail with deep blue-violet head, breast and throat, black back and wings, white under-tail coverts, red eyes and orange legs and feet with long slim toes. The distinctive bright red conical bill is connected to a similarly coloured frontal shield ornament covering the forehead.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/074.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/pukeko'
     },
@@ -245,7 +245,7 @@ exports.seed = function (knex) {
       length: '50 cm',
       weight: '2 - 3.5 kg',
       description: 'This is the largest living (flightless) species of rail in the world, which has deep blue on the head, neck and underparts, olive green on the wings and back, and a white undertail. The huge conical bill is bright red, paler towards the tip, and extends on to the forehead as a red frontal shield, and the stout legs are red with orange underneath.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/075.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/south-island-takahe'
     },
@@ -258,7 +258,7 @@ exports.seed = function (knex) {
       length: '35 - 39 cm',
       weight: '520 - 570 g',
       description: 'An entirely slate-grey medium-sized rail with a white bill and frontal shield, red eyes and very large grey feet with large lobed toes. Juvenile and immature birds have duller and paler colouring with pale grey on the chin and throat, brown eyes and smaller frontal shields.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/076.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/australian-coot'
     },
@@ -271,7 +271,7 @@ exports.seed = function (knex) {
       length: '24 cm',
       weight: '105 g',
       description: 'A medium-sized wader that is plain grey above and white below in non-breeding plumage with a dark medium length bill, yellowish to grey legs and a lightly barred white rump. In breeding plumage the mantle and scapulars become variably dark-centred with red patches, and the belly, breast and face become reddish.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/077.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/lesser-knot'
     },
@@ -284,7 +284,7 @@ exports.seed = function (knex) {
       length: 'M: 39 cm | F: 41 cm',
       weight: 'M: 275 - 400 g | F: x 325 - 600 g',
       description: 'A large long-legged wader, brown above, pale below, with a long tapering and slightly upturned pink bill with black tip. Males are markedly smaller with shorter bills than females.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/078.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/bar-tailed-godwit'
     },
@@ -297,7 +297,7 @@ exports.seed = function (knex) {
       length: '48 cm',
       weight: '720 g',
       description: 'A large heavily-built wader with black upperparts and underparts that vary from all black through a range of ‘smudgy’ intermediate states to white. The long straight bill is bright orange, the stout legs coral-pink, and the eyes red each with an orange eye-ring.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/079.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/variable-oystercatcher'
     },
@@ -310,7 +310,7 @@ exports.seed = function (knex) {
       length: '46 cm',
       weight: '550 g',
       description: 'A large solidly-built black-and-white wader with a long straight bright orange bill and stout pink legs. The sharply delineated border on the lower breast between the black upperparts and white underparts is diagnostic.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/080.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/south-island-pied-oystercatcher'
     },
@@ -323,7 +323,7 @@ exports.seed = function (knex) {
       length: '35 cm',
       weight: '190 g',
       description: 'A compact, black-and-white stilt with long red legs and a long fine pointed black bill. Adult hybrid stilts have a black band of variable width across the breast.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/081.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/pied-stilt'
     },
@@ -336,7 +336,7 @@ exports.seed = function (knex) {
       length: '40 cm',
       weight: '220 g',
       description: 'A compact, all-black stilt with long red legs and a long fine pointed black bill. Adult hybrid stilts have a black band of variable width across the breast.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/082.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/black-stilt'
     },
@@ -349,7 +349,7 @@ exports.seed = function (knex) {
       length: '25 cm',
       weight: '150 g',
       description: 'A bulky plover with a heavy black bill, relatively long grey legs and large round dark eyes. The upperparts are brown and the underparts off-white, becoming orange-red from May, with the depth and extent of red varying individually and seasonally, and males generally being darker than females.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/083.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/new-zealand-dotterel'
     },
@@ -362,7 +362,7 @@ exports.seed = function (knex) {
       length: '20 cm',
       weight: '60 g',
       description: 'A small compact brown and white plover with a short black bill, relatively long dark legs and large round dark eyes. Breeding males have a broad chestnut breast band with a narrow black neck band above it; females have both bands but they are duller.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/084.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/banded-dotterel'
     },
@@ -375,7 +375,7 @@ exports.seed = function (knex) {
       length: '20 cm',
       weight: '55 g',
       description: 'A relatively small pale plover with a long black bill curving to the right, dark grey to black legs and, in breeding males, a black line above the white forehead. The underparts are white, with a black upper breast band from mid-winter to the end of the breeding season, and the upperparts and sides of the face are pale grey.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/085.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/wrybill'
     },
@@ -388,7 +388,7 @@ exports.seed = function (knex) {
       length: '16 - 18 cm',
       weight: '30 - 35 g',
       description: 'A small plover with black-tipped red bill, orange legs, and prominent black bands on the breast and face contrasting the rest of the white and light brown plumage. Young birds have mostly white on the breast with black bands developing with adulthood.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/086.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/black-fronted-dotterel'
     },
@@ -401,7 +401,7 @@ exports.seed = function (knex) {
       length: '20 cm',
       weight: '60 g',
       description: 'A small stocky plover that is brown above and white below with a distinctive black (male) or dark-brown (female) face mask extending down the neck and throat, a bold white stripe above the eyes, a grey-brown crown mottled with darker brown, and white underparts. The relatively long pointed orange bill has a dark tip, the eye-rings are orange-red and the legs are orange.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/087.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/shore-plover'
     },
@@ -414,7 +414,7 @@ exports.seed = function (knex) {
       length: '38 cm',
       weight: '350 g',
       description: 'A large stocky wader with yellow bill, facial wattles, eye rings and spurs at the carpal joints of each wing, black on the crown and hind neck extending to the breast, and long reddish-brown legs. The rest of the head, neck and under parts are white, the mantle, back and coverts are uniform light grey-brown contrasting with a white rump, and the black tail has a white base and thin white tip.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/088.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/spur-winged-plover'
     },
@@ -427,7 +427,7 @@ exports.seed = function (knex) {
       length: '65 cm',
       weight: '1.5 - 2.2 kg',
       description: 'A large, heavy-set brown gull-like bird with a black hooked bill, black eyes and legs, and long broad pointed wings each with a distinctive white outerwing patch. The sexes are alike, although females are substantially larger.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/089.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/subantarctic-skua'
     },
@@ -440,7 +440,7 @@ exports.seed = function (knex) {
       length: '60 cm',
       weight: '1 kg',
       description: 'A large black-and-white gull with a white head and underparts, black back, yellow bill with a red spot near the tip, and pale green legs. Juveniles are dark mottled brown with black bill and legs; their plumage lightens with age until they moult into adult plumage at 3-years-old.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/090.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/southern-black-backed-gull'
     },
@@ -453,7 +453,7 @@ exports.seed = function (knex) {
       length: '38 cm',
       weight: '240 - 320 g',
       description: 'A medium-sized white gull with pale grey mantle, back and wing coverts, black main flight feathers with white tips, white iris, and bright red bill, eyelids and legs. Immatures are similar to adults but with brown patches on the mantle, brownish primaries, and dark brown iris, bill and legs.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/091.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/red-billed-gull'
     },
@@ -466,7 +466,7 @@ exports.seed = function (knex) {
       length: '36 cm',
       weight: '230 g',
       description: 'A medium-sized white gull with pale grey wings and back, white-tipped black margins to the main flight feathers, white iris, red eye-ring, black legs and a relatively long straight black bill. Non-breeding adults have a bi-coloured bill, reddish at the base with a black tip and a line through the middle.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/092.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/black-billed-gull'
     },
@@ -479,7 +479,7 @@ exports.seed = function (knex) {
       length: '25 cm',
       weight: '70 g',
       description: 'A small tern with pale grey upperparts, white underparts, a yellow-orange bill, and bright orange legs. A black cap covers the crown and nape extending forward to surround the eye, forming an irregular patch in front of it, but never reaching the bill; a rounded white ‘notch’ projects into the black cap above the eye and connects with the white forehead.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/093.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/fairy-tern'
     },
@@ -492,7 +492,7 @@ exports.seed = function (knex) {
       length: '50 cm',
       weight: '700 g',
       description: 'A very large heavily built tern, silver-grey above and white below, with dark wing tips, a large pointed bright red bill with dark tip, a relatively short slightly forked tail. Adults have black legs and a black cap to below the eye during the breeding season; the cap becomes speckled with white and less sharply delineated at other times of the year.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/094.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/caspian-tern'
     },
@@ -505,7 +505,7 @@ exports.seed = function (knex) {
       length: '28 cm',
       weight: '95 g',
       description: 'A medium-small blue-grey tern with a forked tail, short orange legs and bright orange pointed decurved bill. Breeding adults have pale blue-grey body plumage contrasting with a black cap and narrow white cheek stripe; non-breeding adults have a mottled grey cap, a black patch around the eye and ear coverts, and a black-tipped bill.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/095.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/black-fronted-tern'
     },
@@ -518,7 +518,7 @@ exports.seed = function (knex) {
       length: '32 cm',
       weight: '260 - 430 g',
       description: 'A medium-sized pigeon that occurs in a wide variety of plumages, including all-black, blue-grey, red-brown, buff, white, and pied variants of each. The wild-type rock pigeon is blue-grey with black wing bars, lighter tones over the back and wings, a white rump, a black tail band, iridescent purple-green on the neck, upper mantle and chest, grey-black bill, white cere, red-pink legs and red eyes.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/096.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/rock-pigeon'
     },
@@ -531,7 +531,7 @@ exports.seed = function (knex) {
       length: '28 cm',
       weight: '140 g',
       description: 'A medium-sized creamy grey-brown dove with a black half-collar on the back of the neck bordered with white above. The bill is grey-black, eyes red and legs crimson.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/097.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/barbary-dove'
     },
@@ -544,7 +544,7 @@ exports.seed = function (knex) {
       length: '50 cm',
       weight: '630 g',
       description: 'A large arboreal pigeon with a red bill, feet and eyes. The upperparts are blue-green with purple-bronze iridescence on the neck, mantle and wing coverts, and the underparts are white with a sharp demarcation between the white and blue-green on the upper breast.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/098.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/new-zealand-pigeon'
     }

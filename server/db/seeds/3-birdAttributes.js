@@ -11,7 +11,7 @@ exports.seed = function (knex) {
       length: '62 cm',
       weight: 'M: 2 - 4 kg | F: 1 - 2.5 kg',
       description: 'A very large bulky flightless moss green parrot with a pale owl-like face and large grey bill, legs and feet. The upperparts are moss green mottled with yellow and black above, and similar but more yellow below.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/099.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/kakapo'
     },
@@ -24,7 +24,7 @@ exports.seed = function (knex) {
       length: '38 - 44 cm',
       weight: '340 - 400 g',
       description: 'A large olive-brown forest parrot with grey-white crown, bright red-orange underwing and deep crimson belly and under-tail coverts. Males have a noticeably longer and deeper upper mandible and bigger head than females which is apparent when the two are seen side by side.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/100.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/kaka'
     },
@@ -37,7 +37,7 @@ exports.seed = function (knex) {
       length: '46 cm',
       weight: 'M: 900 - 1100 g | F: 700 - 900 g',
       description: 'A large olive-green parrot with orange underwings and rump, a slender grey-black bill, and blue-green iridescence on the primary flight feathers. Females are 20% lighter than males with a shorter bill, and juveniles have a yellow cere, lower mandible and eyelids, which fade to grey as the bird matures.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/101.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/kea'
     },
@@ -50,7 +50,7 @@ exports.seed = function (knex) {
       length: '48 - 55 cm',
       weight: '800 - 1000 g',
       description: 'A large stocky white cockatoo with pale yellow on the underwings and undertail, large hooked black bill, red-brown eyes, short broad wings and a forward-curving yellow crest that fans out when aroused. Females are slightly larger than males and juveniles have a paler eye, and some grey in the plumage.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/102.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/sulphur-crested-cockatoo'
     },
@@ -63,7 +63,7 @@ exports.seed = function (knex) {
       length: '30 cm',
       weight: '90 - 120 g',
       description: 'A medium-sized long-tailed rosella with a bright red head, white cheek patches, yellow belly. yellow-green upper back mottled with black, bright green rump, dark blue upperwings with bright blue shoulders, and dark green and light blue tail feathers. Males are brighter than females; juveniles are duller than adults, with greener plumage.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/103.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/eastern-rosella'
     },
@@ -76,7 +76,7 @@ exports.seed = function (knex) {
       length: '35 cm',
       weight: '130 g',
       description: 'A large long-tailed rosella with a rich crimson head and body, violet–blue cheeks, hooked grey bill, mottled black upper back, light blue shoulders, dark blue tail, and dark blue to black flight feathers. Juveniles are mainly bright olive-green with a red forehead, breast and undertail, and blue cheek patches.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/104.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/crimson-rosella'
     },
@@ -89,7 +89,7 @@ exports.seed = function (knex) {
       length: '26 cm',
       weight: '75 g',
       description: 'A medium-sized long-tailed parakeet with broad rounded wings, mainly green plumage, crimson forehead, fore-crown and patches behind the eyes and on each flank at the base of the tail. The leading edge of the primary wing feathers are a rich cyan blue and their flight appears to be erratic when crossing open spaces.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/105.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/red-crowned-parakeet'
     },
@@ -102,7 +102,7 @@ exports.seed = function (knex) {
       length: '25 cm',
       weight: 'M: 50 g | F: 40 g',
       description: 'A small, long-tailed mainly green parakeet with a yellow crown, a crimson band between the crown and the cere, a red spot on each side of the rump and a blue leading edge to the outer wing. The bill is pale bluish-grey with a black tip and cutting edge; the legs and feet black-brown.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/106.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/yellow-crowned-parakeet'
     },
@@ -115,7 +115,7 @@ exports.seed = function (knex) {
       length: '21 cm',
       weight: 'M: 40 - 50 g | F: 30 - 40 g',
       description: 'A small long-tailed parakeet with a blue-green wash to the under-parts, azure blue primary wing coverts and leading edges to outer primaries, a lemon-yellow crown, and an orange frontal band, which reaches the eye, and two orange patches on each side of the rump. Males tend to have a brighter hue; juveniles are duller, especially the frontal band and crown patch, which may be absent.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/107.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/orange-fronted-parakeet'
     },
@@ -128,7 +128,7 @@ exports.seed = function (knex) {
       length: 'M: 32 cm | F: 28 cm',
       weight: '130 g',
       description: 'A medium-sized long-tailed parakeet with uniformly green plumage, a very large pale grey bill, broad rounded wings, and pale blue leading edges to outer primaries. Although capable of strong direct flight, this species prefers to fly only short distances.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/108.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/antipodes-island-parakeet'
     },
@@ -141,7 +141,7 @@ exports.seed = function (knex) {
       length: '16 cm',
       weight: '23 g',
       description: 'A relatively small cuckoo with iridescent dark green plumage upperparts and white below with narrow dark green transverse bands. Immature plumage is slightly duller, especially on the throat and chest, with less distinct ventral barring.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/109.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/shining-cuckoo'
     },
@@ -154,7 +154,7 @@ exports.seed = function (knex) {
       length: '40 cm',
       weight: '125 g',
       description: 'A large long-tailed brown cuckoo with transverse barring and spots all over, a pale brownish horn bill, dark eyes and yellow legs. The back and scapulars are dark brown with numerous red-brown transverse bars, the underparts are paler with dark brown longitudinal streaks, and the breast and belly are white with dark brown longitudinal thick streaks.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/110.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/long-tailed-cuckoo'
     },
@@ -167,7 +167,7 @@ exports.seed = function (knex) {
       length: '29 cm',
       weight: '175 g',
       description: 'A small, dark brown owl of forests and forest remnants, including in suburbs. Most often detected by its characteristic morepork call, moreporks have a range of other calls often confused with kiwi.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/111.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/morepork'
     },
@@ -180,7 +180,7 @@ exports.seed = function (knex) {
       length: '23 cm',
       weight: '180 g',
       description: 'A small, plump grey-brown owl with white streaks and spots, pale grey facial discs either side of their face below the eyes, and prominent white bands above the yellow eyes and below the chin. The legs have thick white feathering down to the pale yellow-grey toes.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/112.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/little-owl'
     },
@@ -193,7 +193,7 @@ exports.seed = function (knex) {
       length: '30 - 38 cm',
       weight: '230 - 480 g',
       description: 'A very pale, medium-sized owl with a distinctive white, heart-shaped face, black eyes and a pale pinkish bill. The crown, nape, back and upperwings are orange-buff and grey with white spots, the throat, breast and belly are white with dark spots, and the long legs are fully covered with white feathers down to the greyish toes.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/113.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/barn-owl'
     },
@@ -206,7 +206,7 @@ exports.seed = function (knex) {
       length: '40 - 45 cm',
       weight: 'M: 310 - 350 g | F: 350 - 480 g',
       description: 'A giant kingfisher with a big head, long robust pointed bill, relatively small body and tail. It has a pale head with dark brown ear-coverts, off-white underparts, brown back, and black-barred rufous tail, with blue on the rump and upper wing-coverts.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/114.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/laughing-kookaburra'
     },
@@ -219,7 +219,7 @@ exports.seed = function (knex) {
       length: '23 cm',
       weight: '55 g',
       description: 'A medium-sized kingfisher with a green-blue back, yellow-buff undersides, a large pointed black bill, a broad black eye-stripe from lores to ear-coverts, and a white collar in adults. Immatures are duller, with buff feather edges on upper parts and brownish mottling on the chest and collar.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/115.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/sacred-kingfisher'
     },
@@ -232,7 +232,7 @@ exports.seed = function (knex) {
       length: '8 cm',
       weight: '6 g',
       description: 'A very small forest bird with short wings, a very short tail, pale grey under-parts and a slender pointed black bill angled slightly upwards. Males are smaller than females with green on the head and back; females are mainly yellow-brown with darker speckles on the head and back.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/116.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/rifleman'
     },
@@ -245,7 +245,7 @@ exports.seed = function (knex) {
       length: '10 cm',
       weight: '18 g',
       description: 'A very small alpine bird with short tail, rounded wings and long legs and toes. The male is dull green above and grey-brown below with yellow flanks, and the female is slightly plainer, mainly olive-brown.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/117.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/rock-wren'
     },
@@ -258,7 +258,7 @@ exports.seed = function (knex) {
       length: '38 cm',
       weight: '225 g',
       description: 'A large songbird with a blue-grey body, striking black mask and small rich blue wattles that grow from the base of the bill, long strong legs and a long down-curved tail. The sexes are alike; juveniles have pink or lilac wattles.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/118.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/north-island-kokako'
     },
@@ -271,7 +271,7 @@ exports.seed = function (knex) {
       length: '25 cm',
       weight: '70 g',
       description: 'A medium-sized black songbird with a chestnut-coloured saddle across the back, fleshy reddish-orange wattles at the base of the bill, a pointed black bill, and a thin gold band on the leading edge of the saddle. Juveniles are similar but the gold band is absent, and they have small wattles.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/119.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/north-island-saddleback'
     },
@@ -284,7 +284,7 @@ exports.seed = function (knex) {
       length: '25 cm',
       weight: '70 - 80 g',
       description: 'A medium-sized black songbird with a chestnut-coloured saddle across the back, fleshy reddish-orange wattles at the base of the bill, and a pointed black bill. Juveniles have chocolate brown plumage for their first year and they have small wattles.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/120.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/south-island-saddleback'
     },
@@ -297,7 +297,7 @@ exports.seed = function (knex) {
       length: '18 cm',
       weight: 'M: 37 g | F: 30 g',
       description: 'A medium-sized songbird with a slender down-curved blackish bill, bold white wing-bars and a habit of cocking its tail. Males have a black head with white ear tufts, yellow neck and shoulder band, white wing-bars and greyish-brown body; females are greyish-brown apart from white wing bars and juveniles resemble adult females.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/121.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/stitchbird'
     },
@@ -310,7 +310,7 @@ exports.seed = function (knex) {
       length: '11 cm',
       weight: '6 g',
       description: 'A tiny slim songbird that is olive-grey above with a grey face and off-white underparts, with a darker grey tail getting darker towards the tip, contrasting with white tips to the tail feathers, and showing as a prominent white band in flight. The finely pointed bill and slender legs are black, the eye is bright red, and birds often glean insects from the outside of the canopy while hovering.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/122.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/grey-warbler'
     },
@@ -323,7 +323,7 @@ exports.seed = function (knex) {
       length: '20 cm',
       weight: 'M: 34 g | F: 26 g',
       description: 'A medium-sized yellowish-green honeyeater with a short decurved black bill, forked tail, red eyes and grey legs. Adult males are olive green with paler underparts, purple-tinted head and blackish wings and tail; adult females are browner with a narrow white-yellow stripe across the cheek from the base of the bill and a bluish gloss on top of head.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/123.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/bellbird'
     },
@@ -336,7 +336,7 @@ exports.seed = function (knex) {
       length: '30 cm',
       weight: 'M: 125 g | F: 90 g',
       description: 'A large dark honeyeater with a decurved black bill, dark brown eyes, black legs and feet, and black head, underparts, wings and tail showing iridescent blue-green on the head and wings. The upper back and flanks are brown with a bronze sheen, the nape and sides of the neck have filamentous white feathers, and there are two curled white feather tufts on the throat.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/124.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/tui'
     },
@@ -349,7 +349,7 @@ exports.seed = function (knex) {
       length: '15 cm',
       weight: '15 - 18 g',
       description: 'A small songbird with a compact body, short tail, dark bill, legs and eyes, and long grey legs. The head and underparts are white or whitish with brown-grey upperparts, wings and tail.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/125.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/whitehead'
     },
@@ -362,7 +362,7 @@ exports.seed = function (knex) {
       length: '15 cm',
       weight: 'M: 30 g | F: 25 g',
       description: 'A small forest-dwelling songbird with a conspicuous yellow head and breast, brown back, wings and tail, and a white lower belly and vent. The end of the tail is tattered and spiky when worn and the bill and legs are black.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/126.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/yellowhead'
     },
@@ -375,7 +375,7 @@ exports.seed = function (knex) {
       length: '13 cm',
       weight: 'M: 14 g | F: 11 g',
       description: 'A small forest-dwelling grey-faced songbird with sharply demarcated light buff underparts, a reddish-brown crown, back, rump and tail, with a dark bar on the tip of the tail. The eyes are reddish-brown and the bill, legs and feet are pinkish- or grey-brown.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/127.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/brown-creeper'
     },
@@ -388,7 +388,7 @@ exports.seed = function (knex) {
       length: '41 cm',
       weight: '350 g',
       description: 'A large black-and-white songbird in which the adult male has a white hind-neck, rump and shoulder patches, upper tail and under-tail coverts. The female is similar, but the mantle may be grey, and the black parts of the plumage are less iridescent; both sexes have a blue-grey bill with a dark tip, and red eyes.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/128.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/australian-magpie'
     },
@@ -401,7 +401,7 @@ exports.seed = function (knex) {
       length: '16 cm',
       weight: '8 g',
       description: 'A small songbird with greyish head, white eyebrows, brown back and rump, cinnamon breast and belly, white and black bands across the upper breast, and a long black and white tail. Five percent of South Island birds are mainly black with black-brown over the rump, belly and flight feathers, and sometimes have a white spot over each ear.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/129.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/new-zealand-fantail'
     },
@@ -414,7 +414,7 @@ exports.seed = function (knex) {
       length: '45 cm',
       weight: 'M: 420 - 500 g | F: 350 - 400 g',
       description: 'A large songbird that is almost entirely black with a purplish gloss, a bare-skinned light grey face, a long pointed black bill, and dark brown eyes. When walking on the ground they have the appearance of baggy-trouser like feathers on the upper leg.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/130.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/rook'
     },
@@ -427,7 +427,7 @@ exports.seed = function (knex) {
       length: '13 cm',
       weight: '11 g',
       description: 'A small songbird with a large head and small black tail in which adult males have a black head, upper breast and back, black wings with a white bar, and white underparts, while females are similar but with duller black areas. In the South, Chatham and Auckland Islands, males have some yellow/orange colouration on the lower breast and belly; both sexes have a white spot at the base of the bill.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/131.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/tomtit'
     },
@@ -440,7 +440,7 @@ exports.seed = function (knex) {
       length: '18 cm',
       weight: '35 g',
       description: 'A small songbird that is light-grey or dark-grey to blackish with a pale grey-white patch over the lower breast-belly, and with many of the contour feathers having pale shafts which give this species a faintly streaked appearance. Adult birds are also able to expose a small white spot of feathers above the base of the bill.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/132.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/north-island-robin'
     },
@@ -453,7 +453,7 @@ exports.seed = function (knex) {
       length: '18 cm',
       weight: '35 g',
       description: 'A small songbird in which adult males have a dark grey-black head and upper body, brownish-black flight feathers and tail, and a sharply demarcated white to yellowish-white lower breast and belly; adult females have a light to dark grey upper body and a smaller, less distinctly demarcated breast-belly area. Adult birds are able to expose a small white spot of feathers above the base of the bill.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/133.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/south-island-robin'
     },
@@ -466,7 +466,7 @@ exports.seed = function (knex) {
       length: '15 cm',
       weight: '24 g',
       description: 'A small rotund songbird intermediate in size and form between its New Zealand tomtit and robin relatives, with both sexes being completely black at all ages, though juveniles have subtle pale streaking on the crown. The tail, legs and bill are slightly longer and stouter than those of Chatham Island subspecies of New Zealand tomtit, with which it shares its range.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/134.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/black-robin'
     },
@@ -479,7 +479,7 @@ exports.seed = function (knex) {
       length: '18 cm',
       weight: '38 g',
       description: 'A small brown and creamy-buff bird with off-white underparts, streaked breast and throat, variegated brown upperparts, a sturdy horn-coloured bill that is yellow-brown at the base, and pink legs and feet with a long slightly curved hind toe. Adults have a faint mask of pale feathers around and behind the eye, and a small streaked crest on the hind crown that is raised when alert.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/135.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/eurasian-skylark'
     },
@@ -492,7 +492,7 @@ exports.seed = function (knex) {
       length: '18 cm',
       weight: '35 g',
       description: 'A small long-tailed songbird that is predominantly streaked brown above and pale below, with loosely-barbed plain brown tail feathers that give birds a distinctive tattered appearance, a pointed greyish-black bill and long pinkish-red legs. The mainland subspecies have a chestnut cap and a prominent pale superciliary stripe.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/136.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/fernbird'
     },
@@ -505,7 +505,7 @@ exports.seed = function (knex) {
       length: '12 cm',
       weight: '13 g',
       description: 'A small songbird with olive-green upperparts, grey hindneck, neck-sides and upper back, dark olive green tail, whitish-cream underparts on the throat and upper breast, creamy grey on the belly and undertail, pinkish-buff flanks, white thighs, and creamy-white on the underside of the wings. Both eyes have a silvery-white ring and dark reddish-brown iris, and the bill and legs are dark brown-black.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/137.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/silvereye'
     },
@@ -518,7 +518,7 @@ exports.seed = function (knex) {
       length: '15 cm',
       weight: '10 - 20 g',
       description: 'A small bird with rufous on the forehead, neck, breast and flanks, a black eye stripe, a short broad black bill, blue-black back and upperwings, pale buff underparts, long dark tail with white spots towards the ends of the feathers, and a deeply-forked tail and long pointed wings. Juveniles are similar but with duller colouring and a darker head.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/138.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/welcome-swallow'
     },
@@ -531,7 +531,7 @@ exports.seed = function (knex) {
       length: '25 cm',
       weight: '90 g',
       description: 'A medium-sized songbird that is entirely black in adult males with a yellow bill, a yellow eye-ring around the dark eye, and long reddish-brown legs. Adult females are mostly dark brown, with light brown or grey throat, and a light brown bill; juveniles are similar but with light mottling over the body.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/139.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/eurasian-blackbird'
     },
@@ -544,7 +544,7 @@ exports.seed = function (knex) {
       length: '22 cm',
       weight: '70 g',
       description: 'A medium-sized songbird with pale cream underparts speckled with fawn-brown chevrons, smooth grey-brown head, back, upper wings and tail, indistinct streaking on the head and the upper wing mostly uniform brown in flight. The sexes are alike with a robust dark pointed bill with yellowish lower mandible; juveniles have similar colouring but the speckling on the breast is less distinct.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/140.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/song-thrush'
     },
@@ -557,7 +557,7 @@ exports.seed = function (knex) {
       length: '21 cm',
       weight: '85 g',
       description: 'A medium-sized glossy iridescent black songbird with tiny white spots, a tapering pointed yellow bill (black in winter and in juveniles), and a short tail and orange-red legs. Males have dark eyes and females have a pale brown edge to the iris; juveniles leaving the nest are pale greyish brown and lack white spots.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/141.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/common-starling'
     },
@@ -570,7 +570,7 @@ exports.seed = function (knex) {
       length: '24 cm',
       weight: '125 g',
       description: 'A stocky brown songbird with a glossy black head and shoulders, yellow bill and facial skin, white-tipped tail feathers, primaries and upper and lower coverts, white-flecked brown-grey irises, and yellow brown legs with horn-coloured claws. Juveniles have paler plumage, a light yellow bill streaked with dark grey, and facial skin which is white for the first two weeks.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/142.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/common-myna'
     },
@@ -583,7 +583,7 @@ exports.seed = function (knex) {
       length: '15 cm',
       weight: '28 g',
       description: 'A small songbird species in which breeding adult males have chestnut-brown, white and grey plumage with a distinctive black bib, grey underparts, variegated brown and white backs and wings, a robust black conical bill, dark brown eyes and dull pink legs. Females and juveniles lack the bib, are greyer with lighter brown dorsal plumage than adult males, and a have a pinkish-brown bill.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/143.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/house-sparrow'
     },
@@ -596,7 +596,7 @@ exports.seed = function (knex) {
       length: '18 cm',
       weight: '35 g',
       description: 'A slender small-medium long-tailed songbird streaked grey-brown above and off-white below, with brown streaking on the breast, a pale eyebrow stripe, white outer tail feathers. The crown is streaked grey-brown, the bill fine and dark, and the legs long, slender and pale brown.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/144.png',
       audio: '#',
       url: 'http://www.nzbirdsonline.org.nz/species/new-zealand-pipit'
     },
@@ -609,7 +609,7 @@ exports.seed = function (knex) {
       length: '14 cm',
       weight: '21 g',
       description: 'A small slim songbird with sombre brown plumage, streaked with darker brown on the back and flanks, and merging into the greyish eyebrow, chin, throat and breast. The blackish bill is fine and pointed, the iris of adults is red-brown, and the legs orange-brown; juveniles are similar but have brown eyes.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/145.png',
       audio: '#',
       url: 'http://www.nzbirdsonline.org.nz/species/dunnock'
     },
@@ -622,7 +622,7 @@ exports.seed = function (knex) {
       length: '15 cm',
       weight: '18 - 25 g',
       description: 'A small songbird species in which males are brightly coloured in spring-summer with a brick-red breast and chestnut mantle, greyish-blue crown and nape, black wings with a prominent white wing-bar and shoulder patch. Males are duller in winter while females are dull brownish-grey with similar wing markings year-round; both sexes have white outer tail-feathers that show during flight.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/146.png',
       audio: '#',
       url: 'http://www.nzbirdsonline.org.nz/species/chaffinch'
     },
@@ -635,7 +635,7 @@ exports.seed = function (knex) {
       length: '12 cm',
       weight: '15 g',
       description: 'A small songbird with bright yellow wingbars, black wings and tail, a buff-brown back, and pale legs and conical bill, in which adults have bright red, white and black facial feathering, and juveniles are drab brown on the head. Often seen in flocks, goldfinches have a bouncy undulating flight accompanied by frequent liquid, tinkly calling.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/147.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/european-goldfinch'
     },
@@ -648,7 +648,7 @@ exports.seed = function (knex) {
       length: '16 cm',
       weight: '28 g',
       description: 'A small songbird species in which adult males are green with yellow on the abdomen, bright yellow bars on the leading edges of the wings, a pinkish conical bill and pink legs. Females are duller with little yellow on the wings while juveniles are similar to adult females but with streaking on the breast.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/148.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/european-greenfinch'
     },
@@ -661,7 +661,7 @@ exports.seed = function (knex) {
       length: '12 cm',
       weight: '12 g',
       description: 'A small brownish-streaked songbird species with a bright red crown patch and a stubby yellowish bill. Adult males have a variable amount of pink on the lower throat and breast which only appears after the second moult; some adult females and first-year males may have a slight pink flush on the breast and juveniles look similar to adult females but are paler and lack any red on the crown.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/149.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/common-redpoll'
     },
@@ -674,7 +674,7 @@ exports.seed = function (knex) {
       length: '16 cm',
       weight: '18 - 30 g',
       description: 'A small relatively long-tailed songbird with a grey-black bill and pinkish legs in which the male has a mostly bright yellow head and underparts, and a dark-streaked brown mantle, and the browner female has more streaking on the head and upper surface with some yellow on the underparts. Both sexes have a rich chestnut rump and white outer tail feathers, which show during flight.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/150.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/yellowhammer'
     },
@@ -687,7 +687,7 @@ exports.seed = function (knex) {
       length: '1.4 m',
       weight: 'M: 12 kg | F: 18 kg',
       description: 'Giant eagle with large wingspan, head, bill, legs and talons. Māori oral tradition records that it had black feathers tinged with yellow or green and a bunch of red feathers on its head.',
-      image: '/images/placeholder-pidgey.png',
+      image: '/images/151.png',
       audio: '#',
       url: 'http://nzbirdsonline.org.nz/species/haasts-eagle'
     }
