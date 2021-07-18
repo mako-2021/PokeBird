@@ -10,9 +10,17 @@ export function getRecentObs () {
 }
 
 export function getBirds () {
-  console.log('getdaBirbs')
   return request
     .get(rootUrl + '/birds')
+    .then(res => res.body)
+    .catch(e => console.log(e.message))
+}
+
+export function getUserObsBySub (userSub) {
+  console.log('getting users bird')
+  return request
+    .post(rootUrl + '/userObs')
+    .send({ userSub })
     .then(res => res.body)
     .catch(e => console.log(e.message))
 }

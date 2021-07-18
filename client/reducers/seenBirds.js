@@ -1,6 +1,6 @@
 import { SEEN_BIRDS } from '../actions/seenBirds'
 
-const initialState = []
+const initialState = ['Hieraaetus moorei']
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {

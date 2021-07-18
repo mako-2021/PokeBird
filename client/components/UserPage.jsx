@@ -1,16 +1,29 @@
 import React, { useEffect, useState } from 'react'
 import { connect } from 'react-redux'
-import { getBirds } from '../apis/birds'
+import { getBirds, getUserObsBySub } from '../apis/birds'
 import { setSeenBirds } from '../actions/seenBirds'
+import { useAuth0 } from '@auth0/auth0-react'
 
 const UserPage = (props) => {
+  const { sub } = useAuth0().user
   const { seenBirds, dispatch } = props
   const [birds, setBirds] = useState([])
+  const [userBirds, setUserBirds] = useState([])
 
   useEffect(() => {
     return getBirds()
       .then(res => {
         setBirds(res)
+        return null
+      })
+      .catch(e => console.log(e))
+  }, [])
+
+  useEffect(() => {
+    return getUserObsBySub(sub)
+      .then(res => {
+        setUserBirds(res)
+        dispatch(setSeenBirds(res))
         return null
       })
       .catch(e => console.log(e))
@@ -29,16 +42,16 @@ const UserPage = (props) => {
       <h1>User&apos;s Gallery</h1>
       <h2>Seen Birds</h2>
       <ul>
-        {seenBirds.map((bird, i) => (
-          <li key={i}>{bird.commonName}</li>
+        {userBirds.map((bird, i) => (
+          <li key={i}>{bird.latinName}</li>
         ))}
       </ul>
       <h1>Birds Gallery</h1>
       <div className='row'>
         {birds.map(function (bird, i) {
           return (
-            <div className='column' key={bird.i}>
-              <div className='card' key={i} onClick={(e) => handleClick(bird, e)}>
+            <div className='column' key={i}>
+              <div className='card' key={bird.latinName} onClick={(e) => handleClick(bird.latinName, e)}>
                 <img src={bird.image}></img>
                 <h3>{bird.commonName}</h3>
                 <p>{bird.nzStatus}</p>
