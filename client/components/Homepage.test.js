@@ -13,7 +13,7 @@ const fakeStore = {
 }
 
 jest.mock('../actions/observed', () => ({
-  fetchRecentObs: jest.fn
+  fetchRecentObs: jest.fn()
 }))
 
 fakeStore.getState.mockImplementation(() => ({
