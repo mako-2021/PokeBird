@@ -1,7 +1,7 @@
 exports.seed = function (knex) {
   // Deletes ALL existing entrie
   // Inserts seed entries
-  return knex('birdAttributes').insert([
+  return knex('birds').insert([
     {
       commonName: 'Tākapu | Australasian gannet',
       latinName: 'Morus serrator',
