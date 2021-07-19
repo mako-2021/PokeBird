@@ -3,16 +3,13 @@ import { connect } from 'react-redux'
 import { setActivePage } from '../actions/activePage'
 import { useAuth0 } from '@auth0/auth0-react'
 
-export const PageMenu = (props) => {
+const PageMenu = (props) => {
   const { dispatch } = props
   const { isAuthenticated } = useAuth0()
 
-
-  function handleClick(e) {
+  function handleClick (e) {
     e.preventDefault()
     dispatch(setActivePage(e.target.value))
-
-
   }
 
   return (

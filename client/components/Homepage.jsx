@@ -1,14 +1,13 @@
 import React, { useEffect } from 'react'
 import { MapContainer, TileLayer, Marker, Tooltip } from 'react-leaflet'
 import { usePosition } from 'use-position'
-import { fetchRecentObs, setRecentObs } from '../actions/observed'
+import { fetchRecentObs } from '../actions/observed'
 import { connect } from 'react-redux'
 import L from 'leaflet'
 
 function Homepage (props) {
-  const { observed, dispatch } = props
-  const watch = true
-  const { latitude, longitude } = usePosition(watch)
+  const { observed } = props
+  const { latitude, longitude } = usePosition(true)
 
   const icon = L.icon({
     iconUrl: '/images/binoculars.png', // need to use credits: <div>Icons made by <a href="https://www.flaticon.com/authors/vectors-market" title="Vectors Market">Vectors Market</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
@@ -18,10 +17,6 @@ function Homepage (props) {
   useEffect(() => {
     if (latitude !== undefined && longitude !== undefined) {
       return fetchRecentObs()
-        .then(observations => {
-          dispatch(setRecentObs(observations))
-          return null
-        })
     }
   }, [latitude, longitude])
 

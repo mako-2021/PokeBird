@@ -1,6 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import AuthNav from './AuthNav'
+import AuthenticationButton from './AutheticationButton'
 import PageMenu from './PageMenu'
 
 const Navigation = (props) => {
@@ -9,7 +9,7 @@ const Navigation = (props) => {
   return (
     <div className='nav'>
       <PageMenu/>
-      <AuthNav/>
+      <AuthenticationButton/>
     </div>
   )
 }
