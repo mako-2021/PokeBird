@@ -30,7 +30,12 @@ const UserPage = (props) => {
 
   function handleClick (bird, e) {
     e.preventDefault()
+<<<<<<< HEAD
     const seen = seenBirds.find((seenBird) => bird.latinName === seenBird.latinName)
+=======
+    console.log(bird)
+    const seen = seenBirds.find((seenBird) => bird === seenBird)
+>>>>>>> main
     if (seen) {
       alert('Bird has already been added to the list')
     } else {

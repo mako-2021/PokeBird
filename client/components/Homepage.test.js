@@ -28,24 +28,18 @@ fakeStore.getState.mockImplementation(() => ({
 describe('<Homepage />', () => {
   test('list out observed from redux', async () => {
     render(<Provider store={fakeStore}><Homepage /></Provider>)
+    // waitFor(() => {
+
+    // })
     const observed = await screen.getByTestId('bird')
     expect(observed).toHaveLength(1)
   })
-  // test('loads todos from api on intial mount', () => {
-  //   render(<Provider store={fakeStore}><Todos /></Provider>)
-  //   expect(fakeStore.dispatch).toHaveBeenCalled()
-  //   expect(fetchTodos).toHaveBeenCalled()
-  // })
 })
 
 // fetchRecentObs.mockImplementation(() => () => {})
 
-// test('testing header is Map', () => {
-//   render(<Provider store={store}><Homepage /></Provider>)
-//   const heading = screen.getByRole('heading')
-//   expect(heading.innerHTML).toMatch('Map')
-// })
-
-// test('observed.length === markers on map', () => {
-
-// })
+test('testing header is Map', () => {
+  render(<Provider store={store}><Homepage /></Provider>)
+  const heading = screen.getByRole('heading')
+  expect(heading.innerHTML).toMatch('Map')
+})
