@@ -31,3 +31,11 @@ export function addUserObs (observation) {
     .then(res => res.body)
     .catch(e => console.log(e.message))
 }
+
+export function delUserObs (id) {
+  return request
+    .post(rootUrl + '/userObs/del')
+    .send({ id })
+    .then(res => res.body)
+    .catch(e => console.log(e.message))
+}

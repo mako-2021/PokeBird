@@ -28,4 +28,16 @@ router.post('/add', (req, res) => {
     })
 })
 
+router.post('/del', (req, res) => {
+  const id = req.body.id
+  db.delUserObs(id)
+    .then(results => {
+      return res.json(results)
+    })
+    .catch(err => {
+      console.log(err.message)
+      res.status(500).json({ message: 'Something went wrong' })
+    })
+})
+
 module.exports = router

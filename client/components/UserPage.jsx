@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { connect } from 'react-redux'
-import { getBirds, getUserObsBySub, addUserObs } from '../apis/birds'
+import { getBirds, getUserObsBySub, addUserObs, delUserObs } from '../apis/birds'
 import { setSeenBirds } from '../actions/seenBirds'
 import { useAuth0 } from '@auth0/auth0-react'
 
@@ -10,16 +10,20 @@ const UserPage = (props) => {
   const [birds, setBirds] = useState([])
   const [userBirds, setUserBirds] = useState([])
 
-  useEffect(() => {
-    return getBirds()
-      .then(res => {
-        setBirds(res)
-        return getUserObsBySub(sub)
-      })
+  const update = () => {
+    getUserObsBySub(sub)
       .then(res => {
         setUserBirds(res)
         dispatch(setSeenBirds(res))
         return null
+      })
+      .catch(e => console.log(e))
+  }
+  useEffect(() => {
+    return getBirds()
+      .then(res => {
+        setBirds(res)
+        return update()
       })
       .catch(e => console.log(e))
   }, [])
@@ -31,14 +35,14 @@ const UserPage = (props) => {
       alert('Bird has already been added to the list')
     } else {
       addUserObs(bird)
-      getUserObsBySub(sub)
-        .then(res => {
-          setUserBirds(res)
-          dispatch(setSeenBirds(res))
-          return null
-        })
-        .catch(e => console.log(e))
+      update()
     }
+  }
+
+  function handleDelete (id, e) {
+    e.preventDefault()
+    delUserObs(id)
+    update()
   }
 
   return (
@@ -47,7 +51,7 @@ const UserPage = (props) => {
       <h2>Seen Birds</h2>
       <ul>
         {userBirds.map((bird, i) => (
-          <li key={i}>{bird.latinName}</li>
+          <li key={i}>{bird.latinName}<button onClick={(e) => handleDelete(bird.id, e)}>Delete</button></li>
         ))}
       </ul>
       <h1>Birds Gallery</h1>

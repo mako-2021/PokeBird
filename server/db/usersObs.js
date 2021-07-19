@@ -14,7 +14,14 @@ const addUserObs = (observation, db = connection) => {
   return db('usersObs').insert(obs)
 }
 
+const delUserObs = (id, db = connection) => {
+  return db('usersObs')
+    .where('id', id)
+    .del()
+}
+
 module.exports = {
   getUserObsBySub,
-  addUserObs
+  addUserObs,
+  delUserObs
 }
