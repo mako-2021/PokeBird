@@ -2,6 +2,7 @@ const connection = require('./connection')
 
 const getUserObsBySub = (userSub, db = connection) => {
   return db('usersObs')
+    .join('birds', 'birds.id', 'usersObs.birds_id')
     .where('user_sub', userSub)
     .select()
 }
@@ -9,7 +10,7 @@ const getUserObsBySub = (userSub, db = connection) => {
 const addUserObs = (observation, db = connection) => {
   const obs = {
     user_sub: observation.userSub,
-    latinName: observation.latinName
+    birds_id: observation.bird.id
   }
   return db('usersObs').insert(obs)
 }

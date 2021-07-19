@@ -10,6 +10,9 @@ const UserPage = (props) => {
   const [birds, setBirds] = useState([])
   const [userBirds, setUserBirds] = useState([])
 
+  // const myBirdsIds = Object.value(seenBirds.birds_id)
+  // const myBirds = seenBirds.filter(bird => bird.id === seenBirds.birds_id)
+  console.log('seenBirds', seenBirds)
   const update = () => {
     getUserObsBySub(sub)
       .then(res => {
@@ -19,6 +22,7 @@ const UserPage = (props) => {
       })
       .catch(e => console.log(e))
   }
+
   useEffect(() => {
     return getBirds()
       .then(res => {
@@ -30,7 +34,7 @@ const UserPage = (props) => {
 
   function handleClick (bird, e) {
     e.preventDefault()
-    const seen = seenBirds.find((seenBird) => bird.latinName === seenBird.latinName)
+    const seen = seenBirds.find((seenBird) => bird.id === seenBird.birds_id)
     if (seen) {
       alert('Bird has already been added to the list')
     } else {
@@ -51,14 +55,14 @@ const UserPage = (props) => {
       <h2>Seen Birds</h2>
       <ul>
         {userBirds.map((bird, i) => (
-          <li key={i}>{bird.latinName}<button onClick={(e) => handleDelete(bird.id, e)}>Delete</button></li>
+          <li key={i}>{bird.commonName}  <button onClick={(e) => handleDelete(bird.id, e)}>Delete</button></li>
         ))}
       </ul>
       <h1>Birds Gallery</h1>
       <div className='row'>
         {birds.map(function (bird, i) {
-          const seen = seenBirds.find((seenBird) => bird.latinName === seenBird.latinName)
-          const addBird = { userSub: sub, latinName: bird.latinName }
+          const seen = seenBirds.find((seenBird) => bird.id === seenBird.birds_id)
+          const addBird = { userSub: sub, bird }
           if (seen) {
             return (
               <div className='column' key={i}>
