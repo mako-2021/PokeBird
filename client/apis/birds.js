@@ -25,7 +25,6 @@ export function getUserObsBySub (userSub) {
 }
 
 export function addUserObs (observation) {
-  console.log(observation)
   return request
     .post(rootUrl + '/userObs/add')
     .send({ observation })

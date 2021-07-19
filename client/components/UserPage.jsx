@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { connect } from 'react-redux'
-import { getBirds, getUserObsBySub } from '../apis/birds'
+import { getBirds, getUserObsBySub, addUserObs } from '../apis/birds'
 import { setSeenBirds } from '../actions/seenBirds'
 import { useAuth0 } from '@auth0/auth0-react'
 
@@ -14,13 +14,8 @@ const UserPage = (props) => {
     return getBirds()
       .then(res => {
         setBirds(res)
-        return null
+        return getUserObsBySub(sub)
       })
-      .catch(e => console.log(e))
-  }, [])
-
-  useEffect(() => {
-    return getUserObsBySub(sub)
       .then(res => {
         setUserBirds(res)
         dispatch(setSeenBirds(res))
@@ -34,7 +29,16 @@ const UserPage = (props) => {
     const seen = seenBirds.find((seenBird) => bird.latinName === seenBird.latinName)
     if (seen) {
       alert('Bird has already been added to the list')
-    } else { dispatch(setSeenBirds(bird)) }
+    } else {
+      addUserObs(bird)
+      getUserObsBySub(sub)
+        .then(res => {
+          setUserBirds(res)
+          dispatch(setSeenBirds(res))
+          return null
+        })
+        .catch(e => console.log(e))
+    }
   }
 
   return (
@@ -67,7 +71,6 @@ const UserPage = (props) => {
 }
 
 function mapStateToProps (state) {
-  console.log(state)
   return {
     seenBirds: state.seenBirds
   }
