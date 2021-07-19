@@ -1,7 +1,7 @@
 exports.seed = function (knex) {
   // Deletes ALL existing entries
   // Inserts seed entries
-  return knex('birdAttributes').insert([
+  return knex('birds').insert([
     {
       commonName: 'Kakapō',
       latinName: 'Strigops habroptilus',

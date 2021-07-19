@@ -1,7 +1,7 @@
 const connection = require('./connection')
 
 function getBirds (db = connection) {
-  return db('birdAttributes').select()
+  return db('birds').select()
 }
 
 module.exports = {

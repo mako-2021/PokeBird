@@ -1,5 +1,6 @@
 exports.up = function (knex) {
-  return knex.schema.createTable('birdAttributes', table => {
+  return knex.schema.createTable('birds', table => {
+    table.increments('id')
     table.string('commonName')
     table.string('latinName')
     table.string('birdOrder')
@@ -15,5 +16,5 @@ exports.up = function (knex) {
 }
 
 exports.down = function (knex) {
-  return knex.schema.dropTable('birdAttributes')
+  return knex.schema.dropTable('birds')
 }

@@ -38,6 +38,10 @@ body {
   clear: both;
 }
 
+.img-dim {
+  filter: brightness(10%);
+}
+
 /* Responsive columns */
 @media screen and (max-width: 600px) {
   .column {
