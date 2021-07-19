@@ -17,19 +17,21 @@ function BirdsGallery (props) {
   return (
     <>
       <h1>Birds Gallery</h1>
-      <div className='row'>
-        {birds.map(function (bird, i) {
-          return (
-            <div className='column' key={bird.i}>
-              <div className='card' key={i}>
-                <img src={bird.image}></img>
-                <h3>{bird.commonName}</h3>
-                <p>{bird.nzStatus}</p>
+      <div className='col-container'>
+        <div className='w3-row-padding'>
+          {birds.map(function (bird, i) {
+            return (
+              <div className='column' key={bird.i}>
+                <div className='card' key={i}>
+                  <img className='cardImgBlock' src={bird.image}></img>
+                  <h3>{bird.commonName}</h3>
+                  <p>{bird.nzStatus}</p>
+                </div>
               </div>
-            </div>
-          )
-        }
-        )}
+            )
+          }
+          )}
+        </div>
       </div>
     </>
   )
