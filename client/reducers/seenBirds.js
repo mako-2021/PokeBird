@@ -1,12 +1,13 @@
-import { SEEN_BIRDS } from '../actions/seenBirds'
+import { SEEN_BIRDS, GET_SEEN_BIRDS } from '../actions/seenBirds'
 
 const initialState = []
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
     case SEEN_BIRDS:
-      var newState = [...state, action.bird]
-      return newState
+      return action.bird
+    case GET_SEEN_BIRDS:
+      return state
     default:
       return state
   }
