@@ -2,7 +2,7 @@ exports.up = function (knex) {
   return knex.schema.createTable('usersObs', table => {
     table.increments('id').primary()
     table.string('user_sub')
-    table.string('latinName')
+    table.integer('birds_id').references('birds.id')
   })
 }
 

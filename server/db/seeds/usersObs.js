@@ -4,9 +4,9 @@ exports.seed = function (knex) {
     .then(function () {
       // Inserts seed entries
       return knex('usersObs').insert([
-        { id: 1, user_sub: 'auth0|60f1064280c99800681fba9c', latinName: 'Apteryx australis' },
-        { id: 2, user_sub: 'auth0|60f1064280c99800681fba9c', latinName: 'Apteryx rowi' },
-        { id: 3, user_sub: 'auth0|60f1064280c99800681fba9c', latinName: 'Apteryx owenii' }
+        { id: 1, user_sub: 'auth0|60f1064280c99800681fba9c', birds_id: 1 },
+        { id: 2, user_sub: 'auth0|60f1064280c99800681fba9c', birds_id: 2 },
+        { id: 3, user_sub: 'auth0|60f1064280c99800681fba9c', birds_id: 3 }
       ])
     })
 }

@@ -1,9 +1,9 @@
 exports.seed = function (knex) {
   // Deletes ALL existing entries
-  return knex('birdAttributes').del()
+  return knex('birds').del()
     .then(function () {
       // Inserts seed entries
-      return knex('birdAttributes').insert([
+      return knex('birds').insert([
         {
           commonName: 'Haast tokoeka kiwi',
           latinName: 'Apteryx australis',
