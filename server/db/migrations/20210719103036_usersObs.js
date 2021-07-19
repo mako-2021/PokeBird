@@ -1,6 +1,6 @@
 exports.up = function (knex) {
   return knex.schema.createTable('usersObs', table => {
-    table.increments('id').primary()
+    table.increments('id')
     table.string('user_sub')
     table.integer('birds_id').references('birds.id')
   })

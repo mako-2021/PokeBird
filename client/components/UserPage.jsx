@@ -10,9 +10,6 @@ const UserPage = (props) => {
   const [birds, setBirds] = useState([])
   const [userBirds, setUserBirds] = useState([])
 
-  // const myBirdsIds = Object.value(seenBirds.birds_id)
-  // const myBirds = seenBirds.filter(bird => bird.id === seenBirds.birds_id)
-  console.log('seenBirds', seenBirds)
   const update = () => {
     getUserObsBySub(sub)
       .then(res => {
@@ -37,7 +34,7 @@ const UserPage = (props) => {
     const seen = seenBirds.find((seenBird) => bird.id === seenBird.birds_id)
     if (seen) {
       alert('Bird has already been added to the list')
-    } else {
+    } else if (!seen) {
       addUserObs(bird)
       update()
     }
@@ -48,6 +45,8 @@ const UserPage = (props) => {
     delUserObs(id)
     update()
   }
+
+  console.log(seenBirds)
 
   return (
     <>
@@ -62,7 +61,7 @@ const UserPage = (props) => {
       <div className='row'>
         {birds.map(function (bird, i) {
           const seen = seenBirds.find((seenBird) => bird.id === seenBird.birds_id)
-          const addBird = { userSub: sub, bird }
+          const addBird = { userSub: sub, id: bird.id }
           if (seen) {
             return (
               <div className='column' key={i}>
