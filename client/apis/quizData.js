@@ -77,14 +77,14 @@ const quizData = [
     },
     {
         id: 8,
-        questionText: 'What is one of New Zealand’s rarest birds?',
+        questionText: 'Grey warbler/riroriro is one of New Zealand’s lightest birds. Could you guess their weight?',
         answerOptions: [
-            { answerText: 'Stitchbird/hihi', isCorrect: true },
-            { answerText: 'Wrybill/ngutu pare', isCorrect: false },
-            { answerText: 'Yellowhead/mohua', isCorrect: false }
+            { answerText: 'More than 50 grms', isCorrect: false },
+            { answerText: 'Less than 10 grms', isCorrect: true },
+            { answerText: 'More than 100 grms', isCorrect: false }
         ],
-        correctAnswer: 'Stitchbird (Māori name: hihi)',
-        imageURL: 'https://www.doc.govt.nz/thumbs/hero/contentassets/6c492a45411948dfa0538357e9188100/stitchbird-hihi-michael-hamilton-1920-2.jpg'
+        correctAnswer: 'Grey warbler/riroriro\'s weight is about 6.5g, which is around one-third the weight of a mouse.',
+        imageURL: 'https://www.doc.govt.nz/thumbs/hero/contentassets/3ee58cadd67144f786d9b98c434fdecb/grey-warbler-michael-hamilton-1920.jpg'
     },
     {
         id: 9,
