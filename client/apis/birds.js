@@ -2,21 +2,21 @@ import request from 'superagent'
 
 const rootUrl = '/api/v1'
 
-export function getRecentObs () {
+export function getRecentObs() {
   return request
     .get(rootUrl + '/ebirds/obs/recent/')
     .then(res => res.body)
     .catch(e => console.log(e.message))
 }
 
-export function getBirds () {
+export function getBirds() {
   return request
     .get(rootUrl + '/birds')
     .then(res => res.body)
     .catch(e => console.log(e.message))
 }
 
-export function getUserObsBySub (userSub) {
+export function getUserObsBySub(userSub) {
   return request
     .post(rootUrl + '/userObs')
     .send({ userSub })
@@ -24,7 +24,7 @@ export function getUserObsBySub (userSub) {
     .catch(e => console.log(e.message))
 }
 
-export function addUserObs (observation) {
+export function addUserObs(observation) {
   return request
     .post(rootUrl + '/userObs/add')
     .send({ observation })
@@ -32,10 +32,18 @@ export function addUserObs (observation) {
     .catch(e => console.log(e.message))
 }
 
-export function delUserObs (id) {
+export function delUserObs(id) {
   return request
     .post(rootUrl + '/userObs/del')
     .send({ id })
     .then(res => res.body)
     .catch(e => console.log(e.message))
+}
+
+export function getBirdImg(name) {
+  return request
+    .post(rootUrl + '/birds')
+    .send({ latName: name })
+    .then(res => res.body)
+    .catch(e => console.log('Image not found'))
 }

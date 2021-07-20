@@ -1,20 +1,15 @@
-// import React from 'react'
-// import { Provider } from 'react-redux'
-// import { screen, render } from '@testing-library/react'
+import React from 'react'
+import { Provider } from 'react-redux'
+import { screen, render } from '@testing-library/react'
+import App from './App'
+import store from '../store'
+import { HashRouter as Router } from 'react-router-dom'
 
-// import App from './App'
-// import store from '../store'
-// import { fetchFruits } from '../actions'
-
-// jest.mock('../actions')
-
-// fetchFruits.mockImplementation(() => () => {})
-
-// test('page header includes fruit', () => {
-//   render(<Provider store={store}><App /></Provider>)
-//   const heading = screen.getByRole('heading')
-//   expect(heading.innerHTML).toMatch(/Fruit/)
-// })
+test('This is an h1 test', () => {
+  render(<Router><Provider store={store}><App /></Provider></Router>)
+  const headings = screen.getAllByRole('heading')
+  expect(headings[0].innerHTML).toMatch(/This is a test/)
+})
 
 // test('renders an <li> for each fruit', () => {
 //   const fruits = ['orange', 'persimmons', 'kiwi fruit']

@@ -46,11 +46,8 @@ const UserPage = (props) => {
     update()
   }
 
-<<<<<<< HEAD
-=======
   // console.log(seenBirds)
 
->>>>>>> c17a8d105a1a30b23894bb0b5f57d4b4a9858dac
   return (
     <>
       <h1>User&apos;s Gallery</h1>
