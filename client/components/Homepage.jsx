@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from 'react'
+import React, { useEffect } from 'react'
 import { MapContainer, TileLayer, Marker, Tooltip } from 'react-leaflet'
 import { usePosition } from 'use-position'
-import { fetchRecentObs, setRecentObs } from '../actions/observed'
+import { fetchRecentObs } from '../actions/observed'
 import { connect } from 'react-redux'
 import L from 'leaflet'
 import TooltipImage from './TooltipImage'
 
-function Homepage(props) {
+function Homepage (props) {
   const { observed, dispatch } = props
   const watch = true
   const { latitude, longitude } = usePosition(watch)
@@ -27,10 +27,10 @@ function Homepage(props) {
     }
   }, [latitude, longitude])
 
-  if (latitude == undefined && longitude == undefined) {
+  if (latitude === undefined && longitude === undefined) {
     return (
       <div className='loader'>
-        <h2> <i class="fas fa-kiwi-bird"></i> Map is loading... <i class="fas fa-kiwi-bird"></i> </h2>
+        <h2> <i className="fas fa-kiwi-bird"></i> Map is loading... <i className="fas fa-kiwi-bird"></i> </h2>
         {/* <BounceLoader color={'blue'} size={60} /> */}
       </div>
     )
@@ -38,7 +38,7 @@ function Homepage(props) {
 
   return (
     <>
-      <h3 style={{ textAlign: 'center' }}> <i class="fas fa-search-location"></i> Reports of the recent bird viewings in New Zealand. Source: eBird </h3>
+      <h3 style={{ textAlign: 'center' }}> <i className="fas fa-search-location"></i> Reports of the recent bird viewings in New Zealand. Source: eBird </h3>
       <div id="map" style={{ display: 'block', margin: '0 auto', height: '500px', width: '500px' }}>
         <MapContainer center={[-40.90, 174.77]} zoom={5} scrollWheelZoom={true} style={{ height: '500px', width: '500px' }}>
           <TileLayer
@@ -80,7 +80,7 @@ function Homepage(props) {
   )
 }
 
-function mapStateToProps(state) {
+function mapStateToProps (state) {
   return { observed: state.observed }
 }
 
