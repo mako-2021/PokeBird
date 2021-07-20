@@ -6,6 +6,8 @@ const LogoutButton = () => {
 
   return (
     <Menu.Item
+      inverted
+      color='red'
       position='right'
       onClick={() => logout()}>
       <i className="fa fa-sign-out" aria-hidden="true"></i>
