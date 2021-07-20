@@ -29,7 +29,7 @@ const UserPage = (props) => {
       .catch(e => console.log(e))
   }, [])
 
-  function handleClick (bird, e) {
+  function handleClick(bird, e) {
     e.preventDefault()
     const seen = seenBirds.find((seenBird) => bird.id === seenBird.birds_id)
     if (seen) {
@@ -40,12 +40,17 @@ const UserPage = (props) => {
     }
   }
 
-  function handleDelete (id, e) {
+  function handleDelete(id, e) {
     e.preventDefault()
     delUserObs(id)
     update()
   }
 
+<<<<<<< HEAD
+=======
+  // console.log(seenBirds)
+
+>>>>>>> c17a8d105a1a30b23894bb0b5f57d4b4a9858dac
   return (
     <>
       <h1>User&apos;s Gallery</h1>
@@ -88,7 +93,7 @@ const UserPage = (props) => {
   )
 }
 
-function mapStateToProps (state) {
+function mapStateToProps(state) {
   return {
     seenBirds: state.seenBirds
   }

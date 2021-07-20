@@ -5,9 +5,16 @@ import { fetchRecentObs } from '../actions/observed'
 import { connect } from 'react-redux'
 import L from 'leaflet'
 
+<<<<<<< HEAD
 function Homepage (props) {
   const { observed } = props
   const { latitude, longitude } = usePosition(true)
+=======
+function Homepage(props) {
+  const { observed, dispatch } = props
+  const watch = true
+  const { latitude, longitude } = usePosition(watch)
+>>>>>>> c17a8d105a1a30b23894bb0b5f57d4b4a9858dac
 
   const icon = L.icon({
     iconUrl: '/images/binoculars.png', // need to use credits: <div>Icons made by <a href="https://www.flaticon.com/authors/vectors-market" title="Vectors Market">Vectors Market</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
@@ -33,14 +40,14 @@ function Homepage (props) {
             <Tooltip>Wellington</Tooltip>
           </Marker>
           {observed.map((observation, i) => <Marker data-testid='bird' icon={icon} key={i} position={[observation.lat, observation.lng]}>
-            <Tooltip>{observation.comName} <br /> seen at {observation.locName} <br /> on {observation.obsDt}</Tooltip></Marker>)}
+            <Tooltip><img src='https://www.doc.govt.nz/thumbs/hero/contentassets/59ca125424394c748fb9988e93411190/brown-kiwi-hero.jpg' style={{ maxWidth: '150px' }} />  <br />{observation.comName} <br /> seen at {observation.locName} <br /> on {observation.obsDt}</Tooltip></Marker>)}
         </MapContainer>
       </div>
     </>
   )
 }
 
-function mapStateToProps (state) {
+function mapStateToProps(state) {
   return { observed: state.observed }
 }
 
