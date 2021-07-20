@@ -2279,3 +2279,35 @@ input[type=checkbox].check:disabled+.validate,input[type=radio].radio:disabled+.
 .border-pale-yellow,.hover-border-pale-yellow:hover{border-color:#ffffd7!important}.border-pale-blue,.hover-border-pale-blue:hover{border-color:#e7ffff!important}
 .opacity,.hover-opacity:hover{opacity:0.60}
 .text-shadow{text-shadow:1px 1px 0 #444}.text-shadow-white{text-shadow:1px 1px 0 #ddd}
+}
+
+.quiz-list {
+   list-style-type: none;
+  margin-top: 40px;
+  padding: 10px;
+}
+.quiz-wrapper {
+  display: block;
+  margin: 0 auto
+}
+#quiz-not-loaded {
+  display: block;
+  margin: 0 auto
+}
+
+.quiz-answers {
+  list-style-type: none;
+  margin-top: 20px;
+  padding: 10px;
+  text-align: justify;
+}
+
+.quiz-button {
+  margin: 10px;
+  padding: 10px;
+}
+
+.quiz-correct {
+  margin-top: 40px;
+  padding: 10px;
+}
