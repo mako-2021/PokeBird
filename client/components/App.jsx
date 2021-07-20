@@ -7,8 +7,6 @@ import Pages from './Pages'
 import Footer from './Footer'
 
 function App (props) {
-  // const { activePage } = props
-
   return (
     <>
       <Navigation />

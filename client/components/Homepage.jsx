@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from 'react'
+import React, { useEffect } from 'react'
 import { MapContainer, TileLayer, Marker, Tooltip } from 'react-leaflet'
 import { usePosition } from 'use-position'
-import { fetchRecentObs, setRecentObs } from '../actions/observed'
+import { fetchRecentObs } from '../actions/observed'
 import { connect } from 'react-redux'
 import L from 'leaflet'
 import TooltipImage from './TooltipImage'
 
-function Homepage(props) {
+function Homepage (props) {
   const { observed, dispatch } = props
   const watch = true
   const { latitude, longitude } = usePosition(watch)
@@ -27,7 +27,7 @@ function Homepage(props) {
     }
   }, [latitude, longitude])
 
-  if (latitude == undefined && longitude == undefined) {
+  if (latitude === undefined && longitude === undefined) {
     return (
       <div className='loader'>
         <h2> <i className="fas fa-kiwi-bird"></i> Map is loading... <i className="fas fa-kiwi-bird"></i> </h2>
@@ -80,7 +80,7 @@ function Homepage(props) {
   )
 }
 
-function mapStateToProps(state) {
+function mapStateToProps (state) {
   return { observed: state.observed }
 }
 
