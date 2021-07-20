@@ -30,7 +30,7 @@ function Homepage(props) {
   if (latitude == undefined && longitude == undefined) {
     return (
       <div className='loader'>
-        <h2> <i class="fas fa-kiwi-bird"></i> Map is loading... <i class="fas fa-kiwi-bird"></i> </h2>
+        <h2> <i className="fas fa-kiwi-bird"></i> Map is loading... <i className="fas fa-kiwi-bird"></i> </h2>
         {/* <BounceLoader color={'blue'} size={60} /> */}
       </div>
     )
@@ -38,7 +38,7 @@ function Homepage(props) {
 
   return (
     <>
-      <h3 style={{ textAlign: 'center' }}> <i class="fas fa-search-location"></i> Reports of the recent bird viewings in New Zealand. Source: eBird </h3>
+      <h3 style={{ textAlign: 'center' }}> <i className="fas fa-search-location"></i> Reports of the recent bird viewings in New Zealand. Source: eBird </h3>
       <div id="map" style={{ display: 'block', margin: '0 auto', height: '500px', width: '500px' }}>
         <MapContainer center={[-40.90, 174.77]} zoom={5} scrollWheelZoom={true} style={{ height: '500px', width: '500px' }}>
           <TileLayer
