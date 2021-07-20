@@ -4018,8 +4018,7 @@ input[type=checkbox].check:disabled + .validate, input[type=radio].radio:disable
   width: 300px;
   white-space:normal;
   background: #FD8469;
-  text-align: center;
-  margin-top: 20px
+  text-align: center  
   }
 
  .bird-info-text-wellington {
