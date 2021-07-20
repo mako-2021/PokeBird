@@ -8,7 +8,7 @@ const LogoutButton = () => {
     <Menu.Item
       position='right'
       onClick={() => logout()}>
-      <i style={{ color: 'red' }}className="fa fa-sign-out" aria-hidden="true"></i>
+      <i style={{ color: 'red' }}className="fa fa-sign-out" aria-hidden="true" title='Log Out'></i>
     </Menu.Item>
   )
 }
