@@ -1,9 +1,10 @@
-import React, { useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import { MapContainer, TileLayer, Marker, Tooltip } from 'react-leaflet'
 import { usePosition } from 'use-position'
 import { fetchRecentObs, setRecentObs } from '../actions/observed'
 import { connect } from 'react-redux'
 import L from 'leaflet'
+import TooltipImage from './TooltipImage'
 
 function Homepage(props) {
   const { observed, dispatch } = props
@@ -27,7 +28,7 @@ function Homepage(props) {
 
   return (
     <>
-      <h1 style={{ textAlign: 'center' }}>Map of recent bird viewings in New Zealand Source: eBird </h1>
+      <h1 style={{ textAlign: 'center' }}>Reports of the recent bird viewings in New Zealand. Source: eBird </h1>
       <div id="mapid" style={{ display: 'block', margin: '0 auto', height: '600px', width: '600px' }}>
         <MapContainer center={[-40.90, 174.77]} zoom={6} scrollWheelZoom={true} style={{ height: '600px', width: '600px' }}>
           <TileLayer
@@ -35,10 +36,30 @@ function Homepage(props) {
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
           <Marker position={[-41.29, 174.77]}>
-            <Tooltip>Wellington</Tooltip>
+            <div id="customTooltip">
+              <Tooltip
+                offset={[0, 20]}
+                direction='bottom'
+              >
+                Wellington
+              </Tooltip>
+            </div>
           </Marker>
+
           {observed.map((observation, i) => <Marker data-testid='bird' icon={icon} key={i} position={[observation.lat, observation.lng]}>
-            <Tooltip><img src='https://www.doc.govt.nz/thumbs/hero/contentassets/59ca125424394c748fb9988e93411190/brown-kiwi-hero.jpg' style={{ maxWidth: '150px' }} />  <br />{observation.comName} <br /> seen at {observation.locName} <br /> on {observation.obsDt}</Tooltip></Marker>)}
+            <div className="customTooltip">
+              <Tooltip
+                offset={[0, 20]}
+                direction='bottom'
+              >
+                <TooltipImage sciName={observation.sciName} />
+                <br />
+                <h3>{observation.comName}</h3>
+                <p>{observation.sciName}</p>
+                <p> seen at {observation.locName} on {observation.obsDt}</p>
+              </Tooltip>
+            </div>
+          </Marker>)}
         </MapContainer>
       </div>
     </>

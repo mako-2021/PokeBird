@@ -83,4 +83,8 @@ body {
   padding: 10px;
 }
 
+#customTooltip {
+  max-width: 100px !important;
+}
+
 /*# sourceMappingURL=styles.css.map*/
