@@ -2,16 +2,17 @@ import React from 'react'
 import { connect } from 'react-redux'
 import AutheticationButton from './AutheticationButton'
 import PageMenu from './PageMenu'
+import { Menu } from 'semantic-ui-react'
 
 const Navigation = (props) => {
   // const { activePage } = props
 
   return (
     <div className='top'>
-      <ul className="navbar theme-d2 left-align large">
+      <Menu size='large'>
         <PageMenu/>
         <AutheticationButton/>
-      </ul>
+      </Menu>
     </div>
   )
 }
