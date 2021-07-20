@@ -4010,4 +4010,8 @@ input[type=checkbox].check:disabled + .validate, input[type=radio].radio:disable
   padding: 10px;
 }
 
+#customTooltip {
+  max-width: 100px !important;
+}
+
 /*# sourceMappingURL=styles.css.map*/
