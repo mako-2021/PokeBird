@@ -9,7 +9,7 @@ const LoginButton = () => {
     <Menu.Item
       position='right'
       onClick={() => loginWithRedirect()}>
-      <i className="fa fa-sign-in" aria-hidden="true"></i>
+      <i style={{ color: 'green' }} className="fa fa-sign-in" aria-hidden="true" title='Log In'></i>
     </Menu.Item>
   )
 }
