@@ -13,8 +13,14 @@ export default function TooltipImage(props) {
             .catch(e => console.log('Image Unavailable'))
     })
 
-    return <img src={photoUrl} alt='Image not available' style={{ maxWidth: '150px' }} />
-
-
-
+    if (photoUrl) {
+        return <img src={photoUrl} alt='bird image' style={{ maxWidth: '150px', background: 'white', borderRadius: '50%', marginTop: '20px' }} />
+    } else {
+        return (
+            <div>
+                <i className="fab fa-earlybirds" style={{ fontSize: '100px', marginTop: '20px' }}></i><br />
+                <p>Image not available yet but we are working on it!</p>
+            </div>
+        )
+    }
 }
