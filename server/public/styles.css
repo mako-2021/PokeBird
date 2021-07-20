@@ -4011,7 +4011,31 @@ input[type=checkbox].check:disabled + .validate, input[type=radio].radio:disable
 }
 
 #customTooltip {
-  max-width: 100px !important;
+  max-width: 150px !important;
+}
+
+.bird-info, .bird-info-text {
+  width: 300px;
+  white-space:normal;
+  background: #FD8469;
+  text-align: center;
+  margin-top: 20px
+  }
+
+ .bird-info-text-wellington {
+  width: 80px;
+  background:white;
+  text-align: center;
+  white-space:normal;
+  }
+
+.loader {
+  display: block;
+  margin: 100px auto
+}
+
+#map {
+  box-shadow: 10px  10px 10px rgb(180, 179, 179);;
 }
 
 /*# sourceMappingURL=styles.css.map*/
