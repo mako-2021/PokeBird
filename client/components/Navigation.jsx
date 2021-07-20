@@ -9,7 +9,7 @@ const Navigation = (props) => {
 
   return (
     <div className='top'>
-      <Menu size='large'>
+      <Menu size='massive'>
         <PageMenu/>
         <AutheticationButton/>
       </Menu>
