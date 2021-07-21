@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { getBirdImg } from '../apis/birds'
 
-export default function TooltipImage (props) {
+export default function TooltipImage(props) {
   const { sciName } = props
   const [photoUrl, setPhotoUrl] = useState('')
 
@@ -15,7 +15,7 @@ export default function TooltipImage (props) {
   })
 
   if (photoUrl) {
-    return <img src={photoUrl} alt='bird image' style={{ maxWidth: '150px', background: 'white', borderRadius: '50%', marginTop: '20px' }} />
+    return <img src={photoUrl} alt='bird image' style={{ width: '150px', background: '#dddddd', borderRadius: '5px', marginTop: '20px' }} />
   } else {
     return (
       <div>

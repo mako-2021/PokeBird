@@ -1,6 +1,6 @@
 import { RECENT_OBS } from '../actions/observed'
 
-const initialState = [{ speciesCode: 'easros1', comName: 'Eastern Rosella', lat: -37, lng: 175, locName: 'Auckland' }]
+const initialState = []
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
@@ -12,3 +12,5 @@ const reducer = (state = initialState, action) => {
 }
 
 export default reducer
+
+//{ speciesCode: 'easros1', comName: 'Eastern Rosella', lat: -37, lng: 175, locName: 'Auckland' }
