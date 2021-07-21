@@ -59,3 +59,21 @@
   position: absolute;
   right: 60px
 }
+
+.img-dim {
+  filter: brightness(10%)
+}
+
+#pages {
+  max-width: 80%;
+  width: min-content
+}
+
+.sticky-foot {
+  margin: 5em 0em 0em;
+  padding: 5em 0em;
+}
+
+body {
+  min-height: 100%;
+}

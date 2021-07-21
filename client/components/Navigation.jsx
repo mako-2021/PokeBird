@@ -5,8 +5,6 @@ import PageMenu from './PageMenu'
 import { Menu } from 'semantic-ui-react'
 
 const Navigation = (props) => {
-  // const { activePage } = props
-
   return (
     <div className='top'>
       <Menu size='massive'>

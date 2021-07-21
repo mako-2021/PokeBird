@@ -1,6 +1,9 @@
 {
   "name": "boilerplate-fullstack",
   "version": "2.0.0",
+  "engines": {
+    "node": "14.x"
+  },
   "main": "server/index.js",
   "license": "MIT",
   "keywords": [
@@ -15,7 +18,7 @@
     "dev:server": "nodemon --watch server server/index.js",
     "build": "run-p build:client build:server",
     "build:client": "npm run webpack -- --mode production",
-    "build:server": "npm run knex -- migrate:latest",
+    "build:server": "npm run knex -- migrate:rollback && npm run knex -- migrate:latest",
     "lint": "eslint --ext .js,.jsx .",
     "webpack": "webpack --config ./client/webpack.config.js",
     "knex": "knex --knexfile ./server/db/knexfile.js",
