@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 import { getBirds, getUserObsBySub, addUserObs, delUserObs } from '../apis/birds'
 import { setSeenBirds } from '../actions/seenBirds'
 import { useAuth0 } from '@auth0/auth0-react'
+import { Header, Icon, Grid, Image, Button, Card } from 'semantic-ui-react'
 
 const UserPage = (props) => {
   const { sub } = useAuth0().user
@@ -50,13 +51,31 @@ const UserPage = (props) => {
 
   return (
     <>
-      <h1>User&apos;s Gallery</h1>
-      <h2>Seen Birds</h2>
-      <ul>
-        {userBirds.map((bird, i) => (
-          <li key={i}>{bird.commonName}  <button onClick={(e) => handleDelete(bird.id, e)}>Delete</button></li>
-        ))}
-      </ul>
+      <div>
+        <Header as='h1' icon textAlign='center' style={{ marginTop: '20px' }}>
+          <Icon name='users' circular />
+          <Header.Content>User Gallery</Header.Content>
+        </Header>
+      </div>
+      <Header as='h2' textAlign='center'>Seen Birds</Header>
+      <Grid relaxed>
+        <Grid.Row columns={4}>
+          {userBirds.map((bird, i) => (
+            <Grid.Column key={i}>
+              <Card centered padded>
+                <Image src={bird.image} circular />
+                <Card.Content>
+                  <Card.Header>{bird.commonName}</Card.Header>
+                  <Card.Meta>
+                    <span>{bird.nzStatus}</span>
+                  </Card.Meta>
+                </Card.Content>
+              </Card>
+              <Button style={{ margin: 'auto' }} onClick={(e) => handleDelete(bird.id, e)}>Delete</Button>
+            </Grid.Column>
+          ))}
+        </Grid.Row>
+      </Grid>
       <h1>Birds Gallery</h1>
       <div className='row'>
         {birds.map(function (bird, i) {
