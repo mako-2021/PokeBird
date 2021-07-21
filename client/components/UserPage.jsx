@@ -82,7 +82,7 @@ const UserPage = (props) => {
           <Header.Content>Bird Gallery</Header.Content>
         </Header>
         <Grid relaxed stackable devided>
-          <Grid.Row columns={5}>
+          <Grid.Row columns={5} width={15}>
             {birds.map((bird, i) => {
               const seen = seenBirds.find((seenBird) => bird.id === seenBird.birds_id)
               const addBird = { userSub: sub, id: bird.id }
@@ -122,35 +122,6 @@ const UserPage = (props) => {
           </Grid.Row>
         </Grid>
       </div>
-      {/* <h1>Birds Gallery</h1>
-      <div className='row'>
-        {birds.map(function (bird, i) {
-          const seen = seenBirds.find((seenBird) => bird.id === seenBird.birds_id)
-          const addBird = { userSub: sub, id: bird.id }
-          if (seen) {
-            return (
-              <div className='column' key={i}>
-                <div className='card' key={bird.latinName} onClick={(e) => handleClick(addBird, e)}>
-                  <img src={bird.image}></img>
-                  <h3>{bird.commonName}</h3>
-                  <p>{bird.nzStatus}</p>
-                </div>
-              </div>
-            )
-          } else {
-            return (
-              <div className='column' key={i}>
-                <div className='card' key={bird.latinName} onClick={(e) => handleClick(addBird, e)}>
-                  <img src={bird.image} className='img-dim'></img>
-                  <h3>{bird.commonName}</h3>
-                  <p>{bird.nzStatus}</p>
-                </div>
-              </div>
-            )
-          }
-        }
-        )}
-      </div> */}
     </>
   )
 }
