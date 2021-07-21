@@ -6,7 +6,7 @@ import { connect } from 'react-redux'
 import L from 'leaflet'
 import TooltipImage from './TooltipImage'
 
-function Homepage(props) {
+function Homepage (props) {
   const { observed, dispatch } = props
   const watch = true
   const { latitude, longitude } = usePosition(watch)
@@ -49,7 +49,7 @@ function Homepage(props) {
 
   return (
     <>
-      <div id="map" style={{ display: 'block', margin: '0 auto', height: '500px', width: '500px' }}>
+      <div id="map" style={{ display: 'block', margin: 'auto', height: '500px', width: '500px', paddingTop: '30px' }}>
         <MapContainer center={[-40.90, 174.77]} zoom={5} scrollWheelZoom={true} zoomControl={false} style={{ height: '500px', width: '500px' }}>
           <TileLayer
             attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
@@ -81,12 +81,11 @@ function Homepage(props) {
           </Marker>)}
         </MapContainer>
       </div>
-      <div>Some information about the team PokeBird</div>
     </>
   )
 }
 
-function mapStateToProps(state) {
+function mapStateToProps (state) {
   return { observed: state.observed }
 }
 
