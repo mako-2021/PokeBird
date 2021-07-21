@@ -76,7 +76,7 @@ const UserPage = (props) => {
           </Grid.Row>
         </Grid>
       </div>
-      <div>
+      <div style={{ marginTop: '30px' }}>
         <Header as='h2' icon textAlign='center' style={{ marginTop: '20px' }}>
           <Icon name='binoculars' />
           <Header.Content>Bird Gallery</Header.Content>
