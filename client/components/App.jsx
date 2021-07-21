@@ -10,7 +10,7 @@ function App (props) {
   return (
     <>
       <Navigation />
-      <Pages />
+      <Pages id='pages' />
       <Footer />
     </>
   )

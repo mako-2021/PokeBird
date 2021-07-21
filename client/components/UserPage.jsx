@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 import { getBirds, getUserObsBySub, addUserObs, delUserObs } from '../apis/birds'
 import { setSeenBirds } from '../actions/seenBirds'
 import { useAuth0 } from '@auth0/auth0-react'
+import { Header, Icon, Grid, Image, Button, Card } from 'semantic-ui-react'
 
 const UserPage = (props) => {
   const { sub } = useAuth0().user
@@ -46,45 +47,80 @@ const UserPage = (props) => {
     update()
   }
 
-  // console.log(seenBirds)
-
   return (
     <>
-      <h1>User&apos;s Gallery</h1>
-      <h2>Seen Birds</h2>
-      <ul>
-        {userBirds.map((bird, i) => (
-          <li key={i}>{bird.commonName}  <button onClick={(e) => handleDelete(bird.id, e)}>Delete</button></li>
-        ))}
-      </ul>
-      <h1>Birds Gallery</h1>
-      <div className='row'>
-        {birds.map(function (bird, i) {
-          const seen = seenBirds.find((seenBird) => bird.id === seenBird.birds_id)
-          const addBird = { userSub: sub, id: bird.id }
-          if (seen) {
-            return (
-              <div className='column' key={i}>
-                <div className='card' key={bird.latinName} onClick={(e) => handleClick(addBird, e)}>
-                  <img src={bird.image}></img>
-                  <h3>{bird.commonName}</h3>
-                  <p>{bird.nzStatus}</p>
-                </div>
-              </div>
-            )
-          } else {
-            return (
-              <div className='column' key={i}>
-                <div className='card' key={bird.latinName} onClick={(e) => handleClick(addBird, e)}>
-                  <img src={bird.image} className='img-dim'></img>
-                  <h3>{bird.commonName}</h3>
-                  <p>{bird.nzStatus}</p>
-                </div>
-              </div>
-            )
-          }
-        }
-        )}
+      <div>
+        <Header as='h1' icon textAlign='center' style={{ marginTop: '20px' }}>
+          <Icon name='users' circular />
+          <Header.Content>User Gallery</Header.Content>
+        </Header>
+      </div>
+      <div>
+        <Header as='h2' textAlign='center'>Seen Birds</Header>
+        <Grid relaxed stackable>
+          <Grid.Row columns={4}>
+            {userBirds.map((bird, i) => (
+              <Grid.Column key={i}>
+                <Card centered style={{ marginTop: '20px' }} textAlign='center'>
+                  <Image src={bird.image} circular />
+                  <Card.Content>
+                    <Card.Header>{bird.commonName}</Card.Header>
+                    <Card.Meta>
+                      <span>{bird.nzStatus}</span>
+                    </Card.Meta>
+                  </Card.Content>
+                  <Button style={{ margin: 'auto' }} onClick={(e) => handleDelete(bird.id, e)}>Delete</Button>
+                </Card>
+              </Grid.Column>
+            ))}
+          </Grid.Row>
+        </Grid>
+      </div>
+      <div>
+        <Header as='h2' icon textAlign='center' style={{ marginTop: '20px' }}>
+          <Icon name='binoculars' />
+          <Header.Content>Bird Gallery</Header.Content>
+        </Header>
+        <Grid relaxed stackable devided>
+          <Grid.Row columns={5} width={15}>
+            {birds.map((bird, i) => {
+              const seen = seenBirds.find((seenBird) => bird.id === seenBird.birds_id)
+              const addBird = { userSub: sub, id: bird.id }
+              if (seen) {
+                return (
+                  <Grid.Column key={i}>
+                    <Card centered style={{ marginTop: '20px' }} textAlign='center'
+                      onClick={(e) => handleClick(addBird, e)}>
+                      <Image src={bird.image} />
+                      <Card.Content>
+                        <Card.Header>{bird.commonName}</Card.Header>
+                        <Card.Meta>
+                          <span>{bird.nzStatus}</span>
+                        </Card.Meta>
+                      </Card.Content>
+                    </Card>
+                  </Grid.Column>
+                )
+              } else {
+                return (
+                  <Grid.Column key={i}>
+                    <Card centered style={{ marginTop: '20px' }} textAlign='center'
+                      onClick={(e) => handleClick(addBird, e)}>
+                      <Image src={bird.image} className='img-dim' />
+                      <Card.Content>
+                        <Card.Header>{bird.commonName}</Card.Header>
+                        <Card.Meta>
+                          <span>{bird.nzStatus}</span>
+                        </Card.Meta>
+                      </Card.Content>
+                    </Card>
+                  </Grid.Column>
+                )
+              }
+            }
+            )}
+          </Grid.Row>
+        </Grid>
       </div>
     </>
   )
