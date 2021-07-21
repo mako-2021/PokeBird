@@ -4,7 +4,7 @@ const getUserObsBySub = (userSub, db = connection) => {
   return db('usersObs')
     .join('birds', 'birds.id', 'usersObs.birds_id')
     .where('user_sub', userSub)
-    .select('usersObs.*', 'birds.commonName')
+    .select('usersObs.*', 'birds.commonName', 'birds.image', 'birds.nzStatus')
 }
 
 const addUserObs = (observation, db = connection) => {
