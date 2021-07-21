@@ -26,43 +26,38 @@ function Quiz() {
     }
 
     return (
-        <div className='quiz-wrapper'>
+        <div className="ui raised segment">
             {load ?
-                <div className='row'>
+                <div className="ui column centered grid">
                     {showScore ? (
-                        <div className='column' style={{ width: '600px' }}>
-                            <div className='card' style={{ width: '400px' }}>
-                                <h2>You scored {score} out of {quizData.length}</h2>
-                                <div>Correct answers:
-                                    <ul className='quiz-list'>
-                                        {quizData.map((data, i) => <li className='quiz-correct' key={i}>Question {data.id}: {data.questionText} <br /> {data.correctAnswer} <br /> <img src={data.imageURL} style={{ maxWidth: '200px', borderRadius: '10px' }}></img></li>)}
-                                    </ul>
-                                    Find more on <a href='https://www.doc.govt.nz/nature/native-animals/birds/birds-a-z/'>DOC Website</a><br />
-                                    This quiz has been made using the information provided on the DOC website (including all photography works). Attribution 4.0 International (CC BY 4.0) <a href='https://creativecommons.org/licenses/by/4.0/legalcode'>Legal Code</a>
+                        <div>
+                            <h2 className="ui header">You scored {score} out of {quizData.length}</h2>
+                            <div>
+                                <h2 className="ui header">Correct answers:</h2>
+                                <div className="ui list">
+                                    {quizData.map((data, i) => <div className="item" key={i}>Question {data.id}: {data.questionText} <br /> {data.correctAnswer} <br /> <img className="ui medium rounded image" src={data.imageURL} style={{ maxWidth: '200px', borderRadius: '10px' }}></img></div>)}
                                 </div>
+                                <small>Find more on <a href='https://www.doc.govt.nz/nature/native-animals/birds/birds-a-z/' target="_blank">DOC Website</a><br />
+                                    This quiz has been made using the information provided on the DOC website (including all photography works). Attribution 4.0 International (CC BY 4.0) <a href='https://creativecommons.org/licenses/by/4.0/legalcode'>Legal Code</a></small>
                             </div>
                         </div>
-
                     ) : (
-                        <div className='column' style={{ width: '600px' }}>
-                            <div className='card' style={{ width: '400px' }} >
-                                Question {currentQuestion + 1} /{quizData.length} <br />
-                                {quizData[currentQuestion].questionText}
-                                <ul className='quiz-answers'>{quizData[currentQuestion].answerOptions.map((answerOption, i) => (<li key={i} > <button className='quiz-button' onClick={() => handleAnswer(answerOption.isCorrect)}>{answerOption.answerText}</button></li>
-                                ))}
-                                </ul>
+
+                        <div >
+                            <h2 className="ui header">Question {currentQuestion + 1} /{quizData.length}</h2>
+                            {quizData[currentQuestion].questionText}
+                            <div className="ui list">{quizData[currentQuestion].answerOptions.map((answerOption, i) => (<div className="item" key={i} ><button className="fluid ui button" onClick={() => handleAnswer(answerOption.isCorrect)}>{answerOption.answerText}</button></div>
+                            ))}
                             </div>
                         </div>
                     )}
                 </div>
                 :
-                <div className='row'>
-                    <div className='column'>
-                        <div className='card'>
-                            <h2 id="quiz">Ngā manu – Birds</h2>
-                            <button onClick={handleClick}>Start the quiz</button>
-                            <img src='images/placeholder-pidgey.png' style={{ height: '200px', width: '200px', borderRadius: '50%', background: 'white' }}></img>
-                        </div>
+                <div className="ui column centered grid">
+                    <div>
+                        <h2 className="ui header">Ngā manu – Birds</h2>
+                        <button className="ui button" onClick={handleClick}>Start the quiz</button>
+                        <img className="ui medium rounded image" src='pnghut_question-mark-adobe-illustrator-icon-pale-yellow.png' style={{ height: '200px', width: '200px', borderRadius: '50%', background: 'white' }}></img>
                     </div>
                 </div>
             }
