@@ -1,10 +1,13 @@
 import React from 'react'
+import { Grid } from 'semantic-ui-react'
 
 function Footer () {
   return (
-    <h6 className="footer-bar">
-      This is going to be a footer one day...
-    </h6>
+    <Grid verticalAlign='bottom' textAlign='center' className='sticky-foot'>
+      <Grid.Row style={{ backgroundColor: 'red' }}>
+      I am a Foot
+      </Grid.Row>
+    </Grid>
   )
 }
 
