@@ -12,7 +12,7 @@ const addUserObs = (observation, db = connection) => {
     user_sub: observation.userSub,
     birds_id: observation.id
   }
-  return db('usersObs').insert(obs)
+  return db('usersObs').insert(obs, 'id')
 }
 
 const delUserObs = (id, db = connection) => {
