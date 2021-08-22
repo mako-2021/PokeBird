@@ -1,13 +1,16 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import AuthenticationButton from './AutheticationButton'
+import AutheticationButton from './AutheticationButton'
+import PageMenu from './PageMenu'
+import { Menu } from 'semantic-ui-react'
 
 const Navigation = (props) => {
-  // const { activePage } = props
-
   return (
-    <div className='nav-bar'>
-      <AuthenticationButton/>
+    <div className='top'>
+      <Menu size='massive'>
+        <PageMenu/>
+        <AutheticationButton/>
+      </Menu>
     </div>
   )
 }

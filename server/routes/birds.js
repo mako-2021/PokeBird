@@ -10,8 +10,20 @@ router.get('/', (req, res) => {
       return res.json(results)
     })
     .catch(err => {
-      console.log(err)
+      console.log(err.message)
       res.status(500).json({ message: 'Something went wrong' })
+    })
+})
+
+router.post('/', (req, res) => {
+  const { latName } = req.body
+  db.getBirdImg(latName)
+    .then(results => {
+      return res.json(results)
+    })
+    .catch(err => {
+      console.log(err.message)
+      res.status(500).json({ message: 'Bird not in database' })
     })
 })
 

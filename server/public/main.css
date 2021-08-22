@@ -1,0 +1,79 @@
+.quiz-list {
+  list-style-type: none;
+  margin-top: 40px;
+  padding: 10px;
+}
+
+.quiz-wrapper {
+  display: block;
+  margin: 0 auto;
+}
+
+#quiz-not-loaded {
+  display: block;
+  margin: 0 auto;
+}
+
+.quiz-answers {
+  list-style-type: none;
+  margin-top: 20px;
+  padding: 10px;
+  text-align: justify;
+}
+
+.quiz-button {
+  margin: 10px;
+  padding: 10px;
+}
+
+.quiz-correct {
+  margin-top: 40px;
+  padding: 10px;
+}
+
+#customTooltip {
+  max-width: 150px !important;
+}
+
+.bird-info, .bird-info-text {
+  width: 300px;
+  white-space:normal;
+  background: #eeeeee;
+  text-align: center  
+  }
+
+ .bird-info-text-wellington {
+  width: 80px;
+  background:white;
+  text-align: center;
+  white-space:normal;
+  }
+
+.loader {
+  display: block;
+  margin: 100px auto
+}
+
+#map {
+  box-shadow: 10px  10px 10px rgb(180, 179, 179);
+  /* position: absolute; */
+  right: 60px
+}
+
+.img-dim {
+  filter: brightness(10%)
+}
+
+#pages {
+  max-width: 80%;
+  width: min-content
+}
+
+.sticky-foot {
+  margin: 5em 0em 0em;
+  padding: 5em 0em;
+}
+
+body {
+  min-height: 100%;
+}

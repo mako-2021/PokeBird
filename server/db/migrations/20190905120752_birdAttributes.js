@@ -1,19 +1,20 @@
 exports.up = function (knex) {
-  return knex.schema.createTable('birdAttributes', table => {
-    table.string('commonName')
-    table.string('latinName')
-    table.string('birdOrder')
-    table.string('nzStatus')
-    table.string('conservationStatus')
-    table.string('length')
-    table.string('weight')
-    table.string('description')
-    table.string('image')
-    table.string('audio')
-    table.string('url')
+  return knex.schema.createTable('birds', table => {
+    table.increments('id')
+    table.text('commonName')
+    table.text('latinName')
+    table.text('birdOrder')
+    table.text('nzStatus')
+    table.text('conservationStatus')
+    table.text('length')
+    table.text('weight')
+    table.text('description')
+    table.text('image')
+    table.text('audio')
+    table.text('url')
   })
 }
 
 exports.down = function (knex) {
-  return knex.schema.dropTable('birdAttributes')
+  return knex.schema.dropTable('birds')
 }

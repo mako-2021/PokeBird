@@ -1,37 +1,44 @@
 import React from 'react'
 import { Provider } from 'react-redux'
 import { screen, render } from '@testing-library/react'
-
-import Homepage from './Homepage'
 import store from '../store'
-import { fetchRecentObs } from '../actions/observed'
+import Homepage from './Homepage'
+import { HashRouter as Router } from 'react-router-dom'
+// import store from '../store'
+// import { fetchRecentObs } from '../actions/observed'
 
-const fakeStore = {
-  dispatch: jest.fn,
-  getState: jest.fn,
-  subscribe: jest.fn
-}
+// const fakeStore = {
+//   dispatch: jest.fn(),
+//   getState: jest.fn(),
+//   subscribe: jest.fn()
+// }
 
-jest.mock('../actions/observed', () => ({
-  fetchRecentObs: jest.fn
-}))
+// jest.mock('../actions/observed', () => ({
+//   fetchRecentObs: jest.fn()
+// }))
 
-fakeStore.getState.mockImplementation(() => {
-  {speciesCode:'easros1',comName…91802490'},
-  {speciesCode:'dunnoc1',comName…91802490'},
-  {speciesCode:'comcha',comName:…91802490'},
-  {speciesCode:'sonthr1',comName…91802490'},
-  {speciesCode:'houspa',comName:…91802490'}
-})
+// fakeStore.getState.mockImplementation(() => ({
+//   observed: [
+//     { speciesCode: 'easros1', comName: 'Eastern Rosella', lat: 37, lng: 175, locName: 'Auckland' }
+//     // { speciesCode: 'tui123', comName: 'tui' },
+//     // { speciesCode: 'kf123', comName: 'kingfisher' },
+//     // { speciesCode: 'dunnoc1', comName: 'Dunnock' }
+//   ]
+// }))
 
-// fetchRecentObs.mockImplementation(() => () => {})
+// describe('<Homepage />', () => {
+//   test('list out observed from redux', async () => {
+//     render(<Provider store={fakeStore}><Homepage /></Provider>)
+//     // waitFor(() => {
+
+//     // })
+//     const observed = await screen.getByTestId('bird')
+//     expect(observed).toHaveLength(1)
+//   })
+// })
 
 test('testing header is Map', () => {
-  render(<Provider store={store}><Homepage /></Provider>)
+  render(<Router><Provider store={store}><Homepage /></Provider></Router>)
   const heading = screen.getByRole('heading')
   expect(heading.innerHTML).toMatch('Map')
-})
-
-test('observed.length === markers on map', () => {
-
 })

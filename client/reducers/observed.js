@@ -5,11 +5,12 @@ const initialState = []
 const reducer = (state = initialState, action) => {
   switch (action.type) {
     case RECENT_OBS:
-      const newState = [...action.observed]
-      return newState
+      return action.observed
     default:
       return state
   }
 }
 
 export default reducer
+
+//{ speciesCode: 'easros1', comName: 'Eastern Rosella', lat: -37, lng: 175, locName: 'Auckland' }
